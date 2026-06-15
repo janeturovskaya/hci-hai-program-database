@@ -1,0 +1,18 @@
+project:
+  name: hci-hai-program-database
+  python_version: '3.11+'
+paths:
+  schema: schema/manual_csv_schemas.yaml
+  manual_data: data/manual
+  reports: reports
+validation:
+  allowed_entity_types:
+    - university
+    - program
+    - faculty
+    - lab
+  allowed_confidence:
+    - low
+    - medium
+    - high
+  fuzzy_duplicate_threshold: 90
