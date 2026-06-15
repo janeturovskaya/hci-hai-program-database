@@ -1,0 +1,131 @@
+# Canonical manual CSV schemas for the HCI/HAI program database.
+# Keep these column lists synchronized with data/manual/*.csv templates.
+universities:
+  file: data/manual/universities.csv
+  primary_key: university_id
+  required:
+    - university_id
+    - university_name
+    - city
+    - state
+    - official_url
+    - last_checked
+  columns:
+    - university_id
+    - university_name
+    - city
+    - state
+    - public_private
+    - relevant_departments
+    - notes
+    - official_url
+    - last_checked
+programs:
+  file: data/manual/programs.csv
+  primary_key: program_id
+  foreign_keys:
+    university_id: universities.university_id
+  required:
+    - program_id
+    - university_id
+    - program_name
+    - degree_type
+    - official_url
+    - source_url
+    - last_checked
+  columns:
+    - program_id
+    - university_id
+    - program_name
+    - degree_type
+    - department_or_school
+    - format
+    - duration
+    - research_orientation
+    - thesis_or_capstone
+    - online_available
+    - application_deadline
+    - prerequisites
+    - cost_notes
+    - official_url
+    - source_url
+    - last_checked
+    - notes
+faculty:
+  file: data/manual/faculty.csv
+  primary_key: faculty_id
+  foreign_keys:
+    university_id: universities.university_id
+  required:
+    - faculty_id
+    - university_id
+    - name
+    - title
+    - faculty_url
+    - source_url
+    - last_checked
+  columns:
+    - faculty_id
+    - university_id
+    - name
+    - title
+    - department
+    - lab
+    - research_keywords
+    - hci_relevance
+    - hai_relevance
+    - methods
+    - recent_publications
+    - faculty_url
+    - google_scholar_url
+    - source_url
+    - last_checked
+    - notes
+labs:
+  file: data/manual/labs.csv
+  primary_key: lab_id
+  foreign_keys:
+    university_id: universities.university_id
+  required:
+    - lab_id
+    - university_id
+    - lab_name
+    - lab_url
+    - source_url
+    - last_checked
+  columns:
+    - lab_id
+    - university_id
+    - lab_name
+    - director
+    - themes
+    - student_opportunities
+    - projects
+    - publications_url
+    - lab_url
+    - source_url
+    - last_checked
+    - notes
+evidence:
+  file: data/manual/evidence.csv
+  primary_key: evidence_id
+  required:
+    - evidence_id
+    - entity_type
+    - entity_id
+    - claim
+    - source_url
+    - source_type
+    - date_accessed
+    - confidence
+  columns:
+    - evidence_id
+    - entity_type
+    - entity_id
+    - claim
+    - source_url
+    - source_type
+    - quote_or_snippet
+    - date_accessed
+    - confidence
+    - uncertainty_notes
