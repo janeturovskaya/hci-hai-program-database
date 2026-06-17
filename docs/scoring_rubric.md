@@ -45,3 +45,13 @@ Measures quality of the evidence supporting the row. Strong evidence uses multip
 ## When not to score
 
 Do not score a dimension when evidence is absent, stale, candidate-only without promotion, or supports a different claim. Use `IE` and explain missing evidence. Use `NA` only when a dimension is truly not applicable, not as a substitute for missing data.
+
+## Dimension-specific evidence categories
+
+Evidence rows may now include an optional `claim_category` value that identifies what kind of claim the evidence supports. For scoring, prefer evidence whose `claim_category` matches the dimension being scored, such as `hci_strength`, `hai_strength`, `faculty_lab_fit`, `research_access_for_masters`, `quant_data_ai_curriculum`, `methods_fit`, `career_relevance`, or `practical_fit`.
+
+`source_evidence_ids` in `data/manual/program_scores.csv` remains a semicolon-separated list so one score row can cite multiple evidence records. The category field does not replace evidence IDs; it makes the cited evidence easier to audit and helps reviewers see when a score depends on indirect or mismatched evidence.
+
+## Audit before interpretation
+
+Before interpreting exploratory score rows, run the scoring report and scoring audit workflows. The audit checks completeness, IE patterns, low-confidence dimensions, evidence ID validity, and whether cited evidence has relevant `claim_category` values. Treat audit findings as evidence-collection guidance, not as a ranking signal.

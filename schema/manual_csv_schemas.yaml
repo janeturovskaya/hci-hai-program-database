@@ -129,6 +129,7 @@ evidence:
     - date_accessed
     - confidence
     - uncertainty_notes
+    - claim_category
 candidate_universities:
   file: data/candidates/candidate_universities.csv
   primary_key: candidate_id
@@ -233,6 +234,7 @@ candidate_sources:
     - evidence_snippet
     - confidence
     - uncertainty_notes
+    - claim_category
 
 program_scores:
   file: data/manual/program_scores.csv

@@ -50,7 +50,7 @@ class EnrichProgramTests(unittest.TestCase):
         return enrich_program.make_parser().parse_args(base + extra)
 
     def evidence_args(self):
-        return ["--evidence-claim", "claim", "--source-url", "https://example.edu/source", "--quote-or-snippet", "snippet", "--confidence", "high"]
+        return ["--evidence-claim", "claim", "--source-url", "https://example.edu/source", "--quote-or-snippet", "snippet", "--confidence", "high", "--claim-category", "duration"]
 
     def test_successful_program_enrichment_with_evidence_row_creation(self):
         rc = enrich_program.enrich_program(self.parse(["--duration", "12 months"] + self.evidence_args()))
@@ -60,6 +60,7 @@ class EnrichProgramTests(unittest.TestCase):
         self.assertEqual(evidence["entity_type"], "program")
         self.assertEqual(evidence["entity_id"], "prog_example")
         self.assertEqual(evidence["confidence"], "high")
+        self.assertEqual(evidence.get("claim_category", ""), "duration")
 
     def test_only_explicitly_provided_fields_are_updated(self):
         enrich_program.enrich_program(self.parse(["--duration", "12 months"] + self.evidence_args()))

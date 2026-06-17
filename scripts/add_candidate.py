@@ -16,7 +16,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
-from validate_manual_data import ROOT, is_valid_url, load_simple_yaml, read_csv, validate_all
+from validate_manual_data import ROOT, ALLOWED_CLAIM_CATEGORIES, is_valid_url, load_simple_yaml, read_csv, validate_all
 
 CANDIDATE_CONFIG = {
     "university": {
@@ -46,7 +46,7 @@ CANDIDATE_CONFIG = {
 }
 
 SOURCE_FILE = ROOT / "data/candidates/candidate_sources.csv"
-SOURCE_COLUMNS = ("source_id", "source_type", "source_title", "source_url", "associated_entity_type", "associated_candidate_id", "date_accessed", "evidence_snippet", "confidence", "uncertainty_notes")
+SOURCE_COLUMNS = ("source_id", "source_type", "source_title", "source_url", "associated_entity_type", "associated_candidate_id", "date_accessed", "evidence_snippet", "confidence", "uncertainty_notes", "claim_category")
 
 
 def slugify(value: str) -> str:
@@ -117,6 +117,8 @@ def validate_controlled_values(args: argparse.Namespace) -> list[str]:
             errors.append(f"secondary_relevant_areas contains duplicate values: {duplicates}")
         if args.relevant_area and args.relevant_area in secondary_values:
             errors.append("secondary_relevant_areas must not repeat primary relevant_area")
+    if args.claim_category and args.claim_category not in ALLOWED_CLAIM_CATEGORIES:
+        errors.append(f"claim_category must be one of {sorted(ALLOWED_CLAIM_CATEGORIES)}")
     if args.confidence and args.confidence not in allowed["confidence"]:
         errors.append(f"confidence must be one of {sorted(allowed['confidence'])}")
     if args.source_url and not is_valid_url(args.source_url):
@@ -153,6 +155,7 @@ def build_source_row(args: argparse.Namespace, candidate_id: str, today: str) ->
         "evidence_snippet": args.evidence_snippet,
         "confidence": confidence,
         "uncertainty_notes": args.uncertainty_notes or "",
+        "claim_category": args.claim_category or "",
     }
 
 
@@ -227,6 +230,7 @@ def make_parser() -> argparse.ArgumentParser:
     parser.add_argument("--evidence-snippet", default="")
     parser.add_argument("--confidence", default="")
     parser.add_argument("--uncertainty-notes", default="")
+    parser.add_argument("--claim-category", default="")
     for field in ["university-name", "city", "state", "seed-reason", "program-name", "degree-type", "department-or-school", "format", "faculty-name", "title", "department", "lab-or-group", "research-keywords", "lab-name", "director", "themes"]:
         parser.add_argument(f"--{field}", dest=field.replace("-", "_"), default="")
     return parser
