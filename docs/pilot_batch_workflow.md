@@ -80,7 +80,11 @@ python -m unittest discover
 
 If the placeholder check script is not present in a future branch, skip that command.
 
-## 10. Inspect canonical `data/manual/` CSVs
+## 10. Enrich promoted program details safely
+
+When a promoted canonical program needs additional details such as duration, capstone structure, online availability, deadlines, prerequisites, costs, or URLs, use `scripts/enrich_program.py` instead of editing `data/manual/programs.csv` by hand. The enrichment CLI updates only supported detail fields, writes linked program evidence by default, updates `last_checked`, validates the CSVs, and rolls back all modified files if validation fails.
+
+## 11. Inspect canonical `data/manual/` CSVs
 
 Open the canonical manual CSV files and verify that promoted rows are clean, traceable, and properly linked:
 
@@ -92,7 +96,7 @@ Open the canonical manual CSV files and verify that promoted rows are clean, tra
 
 Confirm that notes include candidate traceability and that evidence rows support the claims being promoted.
 
-## 11. Document schema gaps and workflow pain points
+## 12. Document schema gaps and workflow pain points
 
 At the end of the pilot, write down issues such as:
 
