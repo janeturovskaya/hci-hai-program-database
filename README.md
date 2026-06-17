@@ -104,6 +104,47 @@ Post-pilot resources:
 
 Use `python scripts/pilot_status.py` for a lightweight status summary of candidate statuses, candidate sources, canonical row counts, promoted/rejected totals, and source-linkage warnings. The script summarizes workflow state only; it does not infer facts or verify source quality.
 
+
+## Enrich canonical program records
+
+Use `scripts/enrich_program.py` when an already-promoted row in `data/manual/programs.csv` needs safer, evidence-backed detail updates. This workflow is for enriching existing canonical program records only; it must not be used to create new universities, programs, faculty, or labs.
+
+Canonical enrichment should be evidence-backed because fields such as duration, application deadlines, modality, costs, prerequisites, and capstone requirements can affect downstream review decisions and may change over time. By default, every enrichment writes a linked canonical evidence row to `data/manual/evidence.csv` and updates the program row's `last_checked` date after validation succeeds.
+
+Supported update fields are: `duration`, `research_orientation`, `thesis_or_capstone`, `online_available`, `application_deadline`, `prerequisites`, `cost_notes`, `official_url`, `source_url`, and `notes`. Protected identity fields such as `program_id`, `university_id`, `program_name`, `degree_type`, `department_or_school`, and `format` are intentionally not accepted by this CLI.
+
+Evidence-backed updates require `--evidence-claim`, `--source-url`, `--quote-or-snippet`, and `--confidence`. Optional evidence flags are `--source-type` (default: `official_page`), `--date-accessed` (default: today), and `--uncertainty-notes`. `--source-url` must be HTTP/HTTPS, and `--confidence` must use the controlled confidence values from `config/settings.yaml`.
+
+Blank argument values do not clear existing data by accident. To intentionally clear a supported enrichment field, pass `--clear-field FIELD_NAME`; the flag may be repeated. Notes are appended by default with an enrichment separator. Use `--replace-notes` only when the existing notes should intentionally be replaced.
+
+After writing, the script runs the existing manual data validation. If validation fails, it restores every modified CSV file to its pre-enrichment content, prints the validation errors, and exits non-zero.
+
+Example evidence-backed enrichment:
+
+```bash
+python scripts/enrich_program.py prog_carnegie_mellon_university_master_of_human_computer_interaction \
+  --duration "12 months" \
+  --thesis-or-capstone "Capstone project" \
+  --evidence-claim "The official CMU MHCI page describes the program duration and capstone-style structure." \
+  --source-url "https://hcii.cmu.edu/academics/mhci" \
+  --quote-or-snippet "Example short source snippet" \
+  --confidence "high"
+```
+
+Example intentional clear with evidence:
+
+```bash
+python scripts/enrich_program.py prog_example \
+  --clear-field cost_notes \
+  --evidence-claim "The official program page no longer lists a program-specific cost note." \
+  --source-url "https://example.edu/program" \
+  --quote-or-snippet "Example short source snippet" \
+  --confidence "medium" \
+  --uncertainty-notes "Cleared stale cost note; tuition may be listed elsewhere."
+```
+
+`--no-evidence` is available for rare maintenance exceptions, but it prints a strong warning and should not be used for normal canonical enrichment.
+
 ## Candidate intake workflow
 
 Candidate data is intentionally separate from canonical manual data. Use `data/candidates/` for rough leads that still need review, source checking, deduplication, and promotion decisions. Nothing in candidate CSV files should be treated as canonical until it is manually promoted into `data/manual/` with supporting evidence.
