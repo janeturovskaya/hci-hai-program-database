@@ -2,6 +2,132 @@
 
 This report summarizes only manually provided candidate intake data. It does not infer, scrape, or verify claims.
 
+## Review status: discovered
+
+### Relevant area: core_hci
+
+#### University: Carnegie Mellon University
+
+- **Faculty candidate `cand_fac_carnegie_mellon_university_john_zimmerman`**: John Zimmerman
+  - Source URL: https://hcii.cmu.edu/people/john-zimmerman
+  - Secondary relevant areas: mixed_methods_uxr
+  - Evidence snippet: John Zimmerman describes himself as an interaction designer and researcher teaching interaction design, service innovation, design theory, and HCI methods.
+  - Notes: Official HCII profile supports core HCI/UX methods fit.
+
+#### University: Georgia Institute of Technology
+
+- **Lab candidate `cand_lab_georgia_institute_of_technology_institute_for_people_and_technology`**: Institute for People and Technology
+  - Source URL: https://mshci.gatech.edu/research/research_centers
+  - Secondary relevant areas: human_ai_interaction;human_centered_ai
+  - Evidence snippet: The MS-HCI research page says many students work on projects affiliated with the Institute for People and Technology.
+  - Notes: Official MS-HCI research page supports IPaT as central HCI-related research ecosystem.
+
+#### University: University of California, Berkeley
+
+- **Faculty candidate `cand_fac_university_of_california_berkeley_marti_hearst`**: Marti Hearst
+  - Source URL: https://www.ischool.berkeley.edu/research-areas/human-computer-interaction-hci
+  - Secondary relevant areas: mixed_methods_uxr
+  - Evidence snippet: Berkeley HCI research-area page lists Marti Hearst with human-computer interaction, information visualization, computational linguistics, search, and online education.
+  - Notes: Official research-area page supports core HCI relevance; keep Berkeley under review.
+
+#### University: University of Washington
+
+- **Faculty candidate `cand_fac_university_of_washington_julie_kientz`**: Julie Kientz
+  - Source URL: https://www.hcde.washington.edu/news/ai-institute-exceptional-education
+  - Secondary relevant areas: accessibility;mixed_methods_uxr
+  - Evidence snippet: HCDE describes Julie Kientz as an expert in designing new technologies for children and families from a human-centered perspective.
+  - Notes: Official HCDE news page supports human-centered technology design relevance.
+
+### Relevant area: human_ai_interaction
+
+#### University: Cornell University
+
+- **Faculty candidate `cand_fac_cornell_university_qian_yang`**: Qian Yang
+  - Source URL: https://infosci.cornell.edu/people/qian-yang
+  - Secondary relevant areas: human_centered_ai;core_hci
+  - Evidence snippet: Cornell lists Qian Yang research areas as Human Centered Natural Language Processing and Human-AI interaction, and notes a Ph.D. in human-computer interaction.
+  - Notes: Official Cornell profile supports HAI and HCI relevance; keep Cornell under review.
+- **Faculty candidate `cand_fac_cornell_university_thorsten_joachims`**: Thorsten Joachims
+  - Source URL: https://infosci.cornell.edu/directory?keys=&location=All&name=&office=&page=1&pos_title=&roles%5B147%5D=147
+  - Secondary relevant areas: responsible_ai;computational_social_science
+  - Evidence snippet: Cornell directory lists Thorsten Joachims research areas as Human-AI interaction, Artificial Intelligence, Human Interaction, and Machine Learning.
+  - Notes: Official directory evidence supports HAI research strength; keep Cornell under review.
+- **Lab candidate `cand_lab_cornell_university_human_ai_interaction_research_area`**: Human-AI Interaction research area
+  - Source URL: https://infosci.cornell.edu/research/human-ai-interaction
+  - Secondary relevant areas: human_centered_ai;responsible_ai
+  - Evidence snippet: Cornell says Human-AI Interaction research studies how people interact with, understand, and collaborate with AI technologies.
+  - Notes: Research-area page functions as official group-level evidence; lab/center type field may need more structure.
+
+#### University: University of Washington
+
+- **Faculty candidate `cand_fac_university_of_washington_leah_findlater`**: Leah Findlater
+  - Source URL: https://www.hcde.washington.edu/findlater
+  - Secondary relevant areas: accessibility;core_hci
+  - Evidence snippet: Leah Findlater is a professor in HCDE and a research scientist in the Human-Centered Machine Learning group.
+  - Notes: Official HCDE profile supports HAI/HCI relevance.
+
+### Relevant area: human_centered_ai
+
+#### University: Carnegie Mellon University
+
+- **Lab candidate `cand_lab_carnegie_mellon_university_human_computer_interaction_institute`**: Human-Computer Interaction Institute
+  - Source URL: https://hcii.cmu.edu/
+  - Secondary relevant areas: core_hci;human_ai_interaction
+  - Evidence snippet: The CMU HCII is described as a hub for HCI innovation, education, and research and a leader in human-centered AI.
+  - Notes: Used institute as lab/center candidate because it is the official HCI research unit.
+
+#### University: Georgia Institute of Technology
+
+- **Faculty candidate `cand_fac_georgia_institute_of_technology_duen_horng_chau`**: Duen Horng Chau
+  - Source URL: https://faculty.cc.gatech.edu/~dchau/
+  - Secondary relevant areas: human_ai_interaction;core_hci
+  - Evidence snippet: Chau states his group builds scalable, interactive, and trustworthy tools that amplify human ability to understand and interact with data and machine learning models.
+  - Notes: Official Georgia Tech faculty page supports human-centered AI/HCI fit.
+
+#### University: University of Washington
+
+- **Lab candidate `cand_lab_university_of_washington_hcde_research`**: HCDE Research
+  - Source URL: https://www.hcde.washington.edu/research
+  - Secondary relevant areas: responsible_ai;core_hci
+  - Evidence snippet: HCDE research develops human-centered approaches to AI and data science while addressing privacy, ethics, and misinformation.
+  - Notes: Department research page used as group-level candidate evidence.
+
+### Relevant area: responsible_ai
+
+#### University: University of California, Berkeley
+
+- **Lab candidate `cand_lab_university_of_california_berkeley_center_for_technology_society_policy`**: Center for Technology, Society & Policy
+  - Source URL: https://www.ischool.berkeley.edu/research
+  - Secondary relevant areas: human_centered_ai;social_computing
+  - Evidence snippet: Berkeley says the I School is home to active centers and labs including the Center for Technology, Society & Policy.
+  - Notes: Official research page supports center candidate; specific HCI/HAI fit needs deeper review.
+
+### Relevant area: social_computing
+
+#### University: Carnegie Mellon University
+
+- **Faculty candidate `cand_fac_carnegie_mellon_university_haiyi_zhu`**: Haiyi Zhu
+  - Source URL: https://hcii.cmu.edu/people/haiyi-zhu
+  - Secondary relevant areas: human_centered_ai;human_ai_interaction
+  - Evidence snippet: Haiyi Zhu is an Associate Professor at the Human-Computer Interaction Institute; the profile notes a Ph.D. in Human-Computer Interaction and awards in CHI and CSCW.
+  - Notes: Official HCII profile supports HCI/social computing relevance.
+
+#### University: Georgia Institute of Technology
+
+- **Faculty candidate `cand_fac_georgia_institute_of_technology_diyi_yang`**: Diyi Yang
+  - Source URL: https://www.cc.gatech.edu/people/diyi-yang
+  - Secondary relevant areas: computational_social_science;human_centered_ai
+  - Evidence snippet: Georgia Tech lists Diyi Yang research areas as Natural Language Processing, Machine Learning, Computational Social Science, and Social Computing.
+  - Notes: Official Georgia Tech profile supports social computing/AI ecosystem fit.
+
+#### University: University of California, Berkeley
+
+- **Faculty candidate `cand_fac_university_of_california_berkeley_niloufar_salehi`**: Niloufar Salehi
+  - Source URL: https://www.ischool.berkeley.edu/news/2024/product-perspectives-podcast-interviews-assistant-professor-niloufar-salehi
+  - Secondary relevant areas: human_centered_ai;core_hci
+  - Evidence snippet: Berkeley says Niloufar Salehi studies human-computer interaction and that her interests are social computing, human-centered AI, and HCI.
+  - Notes: Official I School page supports social computing/HAI relevance; keep Berkeley under review.
+
 ## Review status: needs_review
 
 ### Relevant area: core_hci
@@ -17,6 +143,8 @@ This report summarizes only manually provided candidate intake data. It does not
   - Source URL: https://www.ischool.berkeley.edu/programs/mims
   - Secondary relevant areas: mixed_methods_uxr; ai_product_evaluation
   - Evidence snippet: Every MIMS student charts their own path. Whether you want to be an AI engineer, product designer, data scientist, or tech policy leader, you’ll tailor your coursework and projects to fit your ambitions.
+  - Evidence snippet: Berkeley MIMS remains an information-school master’s program candidate; program-detail fields should be confirmed from official pages before promotion.
+  - Evidence snippet: Berkeley I School HCI research-area page lists HCI faculty and topics including human-computer interaction, information visualization, and tangible user interfaces.
   - Notes: Good schema test for program plus school-level research areas. Keep as needs_review; later verify curriculum, faculty, and AI/HCI fit.
 
 ### Relevant area: mixed_methods_uxr
@@ -32,6 +160,8 @@ This report summarizes only manually provided candidate intake data. It does not
   - Source URL: https://infosci.cornell.edu/master-professional-studies-information-science
   - Secondary relevant areas: social_computing; core_hci
   - Evidence snippet: Four optional focus areas offer specialized training in user experience, data science, interactive technologies, and networks, crowds, and markets.
+  - Evidence snippet: Cornell MPS page supports a tailored curriculum for real-world problems and careers; detailed duration/cost/deadline fields need separate confirmation before promotion.
+  - Evidence snippet: Cornell describes HCI researchers as studying how humans interact with technology and using psychology, design, and computer science to create effective digital experiences.
   - Notes: Good test for non-dedicated-HCI but relevant InfoSci program. Keep as needs_review; later check Human-AI faculty and research access.
 
 ## Review status: promoted
