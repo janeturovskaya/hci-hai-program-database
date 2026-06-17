@@ -131,6 +131,8 @@ Allowed `review_status` values are `discovered`, `needs_source`, `needs_review`,
 
 Allowed `relevant_area` values are `core_hci`, `human_ai_interaction`, `human_centered_ai`, `social_computing`, `responsible_ai`, `computational_social_science`, `accessibility`, `human_robot_interaction`, `mixed_methods_uxr`, `ai_product_evaluation`, and `other`.
 
+Candidate entity rows keep `relevant_area` as the primary classification. Use optional `secondary_relevant_areas` for zero or more additional applicable controlled categories, separated by semicolons (for example, `core_hci; social_computing; ai_product_evaluation`). Secondary areas are useful for interdisciplinary programs such as Information Science programs with HCI, UX, social computing, and AI-product relevance. Do not repeat the primary `relevant_area` in `secondary_relevant_areas`.
+
 ### Add source evidence
 
 Add source rows to `data/candidates/candidate_sources.csv` with a `source_id`, `source_url`, `date_accessed`, `evidence_snippet`, and `confidence`. When the source supports a specific candidate, set `associated_entity_type` to `university`, `program`, `faculty`, or `lab`, and set `associated_candidate_id` to an existing candidate ID in the matching candidate CSV.
@@ -153,7 +155,7 @@ Run:
 python scripts/generate_candidate_review.py
 ```
 
-The script writes `reports/candidate_review.md`, grouping candidate rows by review status, relevant area, and university name. The report summarizes only provided candidate data and does not verify or infer unsupported claims.
+The script writes `reports/candidate_review.md`, grouping candidate rows by review status, primary relevant area, and university name. When a row has `secondary_relevant_areas`, the report displays those additional classifications under the candidate. The report summarizes only provided candidate data and does not verify or infer unsupported claims.
 
 
 ### Add candidates with the CLI helper
@@ -173,6 +175,7 @@ python scripts/add_candidate.py university \
   --state "CA" \
   --seed-reason "Known HCI lab" \
   --relevant-area "human_ai_interaction" \
+  --secondary-relevant-areas "core_hci; social_computing" \
   --source-url "https://example.edu/hci" \
   --evidence-snippet "Example evidence snippet" \
   --confidence "medium" \

@@ -23,25 +23,25 @@ CANDIDATE_CONFIG = {
         "file": ROOT / "data/candidates/candidate_universities.csv",
         "prefix": "cand_univ_",
         "name_fields": ("university_name",),
-        "columns": ("candidate_id", "university_name", "city", "state", "seed_reason", "relevant_area", "source_url", "discovered_date", "review_status", "notes"),
+        "columns": ("candidate_id", "university_name", "city", "state", "seed_reason", "relevant_area", "secondary_relevant_areas", "source_url", "discovered_date", "review_status", "notes"),
     },
     "program": {
         "file": ROOT / "data/candidates/candidate_programs.csv",
         "prefix": "cand_prog_",
         "name_fields": ("university_name", "program_name"),
-        "columns": ("candidate_id", "university_name", "program_name", "degree_type", "department_or_school", "format", "seed_reason", "relevant_area", "source_url", "discovered_date", "review_status", "notes"),
+        "columns": ("candidate_id", "university_name", "program_name", "degree_type", "department_or_school", "format", "seed_reason", "relevant_area", "secondary_relevant_areas", "source_url", "discovered_date", "review_status", "notes"),
     },
     "faculty": {
         "file": ROOT / "data/candidates/candidate_faculty.csv",
         "prefix": "cand_fac_",
         "name_fields": ("university_name", "faculty_name"),
-        "columns": ("candidate_id", "university_name", "faculty_name", "title", "department", "lab_or_group", "research_keywords", "relevant_area", "source_url", "discovered_date", "review_status", "notes"),
+        "columns": ("candidate_id", "university_name", "faculty_name", "title", "department", "lab_or_group", "research_keywords", "relevant_area", "secondary_relevant_areas", "source_url", "discovered_date", "review_status", "notes"),
     },
     "lab": {
         "file": ROOT / "data/candidates/candidate_labs.csv",
         "prefix": "cand_lab_",
         "name_fields": ("university_name", "lab_name"),
-        "columns": ("candidate_id", "university_name", "lab_name", "director", "themes", "relevant_area", "source_url", "discovered_date", "review_status", "notes"),
+        "columns": ("candidate_id", "university_name", "lab_name", "director", "themes", "relevant_area", "secondary_relevant_areas", "source_url", "discovered_date", "review_status", "notes"),
     },
 }
 
@@ -107,6 +107,16 @@ def validate_controlled_values(args: argparse.Namespace) -> list[str]:
         errors.append(f"review_status must be one of {sorted(allowed['review_status'])}")
     if args.relevant_area and args.relevant_area not in allowed["relevant_area"]:
         errors.append(f"relevant_area must be one of {sorted(allowed['relevant_area'])}")
+    if args.secondary_relevant_areas:
+        secondary_values = [value.strip() for value in args.secondary_relevant_areas.split(";") if value.strip()]
+        for secondary_area in secondary_values:
+            if secondary_area not in allowed["relevant_area"]:
+                errors.append(f"secondary_relevant_areas values must be one of {sorted(allowed['relevant_area'])}")
+        duplicates = sorted({value for value in secondary_values if secondary_values.count(value) > 1})
+        if duplicates:
+            errors.append(f"secondary_relevant_areas contains duplicate values: {duplicates}")
+        if args.relevant_area and args.relevant_area in secondary_values:
+            errors.append("secondary_relevant_areas must not repeat primary relevant_area")
     if args.confidence and args.confidence not in allowed["confidence"]:
         errors.append(f"confidence must be one of {sorted(allowed['confidence'])}")
     if args.source_url and not is_valid_url(args.source_url):
@@ -206,6 +216,7 @@ def make_parser() -> argparse.ArgumentParser:
     parser.add_argument("--discovered-date", default="")
     parser.add_argument("--review-status", default="discovered")
     parser.add_argument("--relevant-area", default="")
+    parser.add_argument("--secondary-relevant-areas", default="")
     parser.add_argument("--notes", default="")
     parser.add_argument("--allow-duplicate", action="store_true")
     parser.add_argument("--generate-report", action="store_true")

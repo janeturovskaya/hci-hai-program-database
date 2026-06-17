@@ -33,7 +33,7 @@ Store rough human notes in `data/raw/pilot_notes/` if helpful. Structured candid
 
 ## 4. Add candidates with `scripts/add_candidate.py`
 
-Use `scripts/add_candidate.py` to add candidate universities, programs, faculty, and labs. Include linked candidate source evidence when a short snippet is available.
+Use `scripts/add_candidate.py` to add candidate universities, programs, faculty, and labs. Include linked candidate source evidence when a short snippet is available. Keep `relevant_area` as the primary classification and use optional semicolon-separated `secondary_relevant_areas` for additional controlled areas when an interdisciplinary candidate spans HCI, UX, social computing, or AI-product evaluation.
 
 Start from the placeholder examples in [`examples/add_candidate_commands.sh`](../examples/add_candidate_commands.sh), replace every placeholder with reviewed source information, then run only the commands you have edited.
 
@@ -45,7 +45,7 @@ After candidate entry, generate the review report:
 python scripts/generate_candidate_review.py
 ```
 
-Open `reports/candidate_review.md` and review candidates by status, source, snippet, and notes.
+Open `reports/candidate_review.md` and review candidates by status, primary relevant area, secondary relevant areas, source, snippet, and notes.
 
 ## 6. Manually review each candidate
 

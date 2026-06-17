@@ -87,5 +87,38 @@ class CandidateValidationTests(unittest.TestCase):
         self.assertTrue(any("was not found" in issue.message for issue in issues))
 
 
+class SecondaryRelevantAreaValidationTests(unittest.TestCase):
+    def issues_for(self, row):
+        return validate_row_values(
+            "candidate_programs",
+            2,
+            row,
+            set(CONFIG["validation"]["allowed_confidence"]),
+            set(CONFIG["validation"]["allowed_entity_types"]),
+            set(CONFIG["validation"]["allowed_review_statuses"]),
+            set(CONFIG["validation"]["allowed_relevant_areas"]),
+        )
+
+    def test_valid_secondary_relevant_areas(self):
+        issues = self.issues_for({"relevant_area": "core_hci", "secondary_relevant_areas": "human_ai_interaction; other"})
+        self.assertEqual(issues, [])
+
+    def test_invalid_secondary_relevant_area(self):
+        issues = self.issues_for({"relevant_area": "core_hci", "secondary_relevant_areas": "bad_area"})
+        self.assertTrue(any("secondary_relevant_areas" in issue.message for issue in issues))
+
+    def test_blank_secondary_relevant_areas(self):
+        issues = self.issues_for({"relevant_area": "core_hci", "secondary_relevant_areas": ""})
+        self.assertEqual(issues, [])
+
+    def test_duplicate_secondary_relevant_areas(self):
+        issues = self.issues_for({"relevant_area": "core_hci", "secondary_relevant_areas": "other; other"})
+        self.assertTrue(any("duplicate" in issue.message for issue in issues))
+
+    def test_secondary_relevant_area_repeats_primary(self):
+        issues = self.issues_for({"relevant_area": "core_hci", "secondary_relevant_areas": "core_hci; other"})
+        self.assertTrue(any("must not repeat primary" in issue.message for issue in issues))
+
+
 if __name__ == "__main__":
     unittest.main()

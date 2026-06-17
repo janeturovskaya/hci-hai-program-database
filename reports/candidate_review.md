@@ -10,10 +10,12 @@ This report summarizes only manually provided candidate intake data. It does not
 
 - **University candidate `cand_univ_uc_berkeley`**: University of California, Berkeley
   - Source URL: https://www.ischool.berkeley.edu/programs/mims
+  - Secondary relevant areas: mixed_methods_uxr; ai_product_evaluation
   - Evidence snippet: Research areas include Human-computer Interaction (HCI) and User Experience Research.
   - Notes: Pilot edge case: information school program with HCI/UX research areas, not a dedicated HCI degree. Keep as needs_review after intake.
 - **Program candidate `cand_prog_uc_berkeley_mims`**: Master of Information Management and Systems
   - Source URL: https://www.ischool.berkeley.edu/programs/mims
+  - Secondary relevant areas: mixed_methods_uxr; ai_product_evaluation
   - Evidence snippet: Every MIMS student charts their own path. Whether you want to be an AI engineer, product designer, data scientist, or tech policy leader, you’ll tailor your coursework and projects to fit your ambitions.
   - Notes: Good schema test for program plus school-level research areas. Keep as needs_review; later verify curriculum, faculty, and AI/HCI fit.
 
@@ -23,10 +25,12 @@ This report summarizes only manually provided candidate intake data. It does not
 
 - **University candidate `cand_univ_cornell`**: Cornell University
   - Source URL: https://infosci.cornell.edu/master-professional-studies-information-science
+  - Secondary relevant areas: social_computing; core_hci
   - Evidence snippet: With a Master of Professional Studies (MPS) in information science, you'll tackle real-world problems and design a tailored curriculum that prepares you for careers at leading companies.
   - Notes: Pilot edge case: not a dedicated HCI degree, but relevant InfoSci/UX/social computing program. Keep as needs_review after intake.
 - **Program candidate `cand_prog_cornell_mps_info_sci`**: Master of Professional Studies in Information Science
   - Source URL: https://infosci.cornell.edu/master-professional-studies-information-science
+  - Secondary relevant areas: social_computing; core_hci
   - Evidence snippet: Four optional focus areas offer specialized training in user experience, data science, interactive technologies, and networks, crowds, and markets.
   - Notes: Good test for non-dedicated-HCI but relevant InfoSci program. Keep as needs_review; later check Human-AI faculty and research access.
 

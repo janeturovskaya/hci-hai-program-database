@@ -144,6 +144,7 @@ candidate_universities:
     - state
     - seed_reason
     - relevant_area
+    - secondary_relevant_areas
     - source_url
     - discovered_date
     - review_status
@@ -165,6 +166,7 @@ candidate_programs:
     - format
     - seed_reason
     - relevant_area
+    - secondary_relevant_areas
     - source_url
     - discovered_date
     - review_status
@@ -186,6 +188,7 @@ candidate_faculty:
     - lab_or_group
     - research_keywords
     - relevant_area
+    - secondary_relevant_areas
     - source_url
     - discovered_date
     - review_status
@@ -205,6 +208,7 @@ candidate_labs:
     - director
     - themes
     - relevant_area
+    - secondary_relevant_areas
     - source_url
     - discovered_date
     - review_status

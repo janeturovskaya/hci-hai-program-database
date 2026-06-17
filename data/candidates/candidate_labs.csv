@@ -1,1 +1,1 @@
-candidate_id,university_name,lab_name,director,themes,relevant_area,source_url,discovered_date,review_status,notes
+candidate_id,university_name,lab_name,director,themes,relevant_area,secondary_relevant_areas,source_url,discovered_date,review_status,notes
