@@ -129,6 +129,75 @@ python scripts/generate_candidate_review.py
 
 The script writes `reports/candidate_review.md`, grouping candidate rows by review status, relevant area, and university name. The report summarizes only provided candidate data and does not verify or infer unsupported claims.
 
+
+### Add candidates with the CLI helper
+
+Use `scripts/add_candidate.py` to append one candidate row at a time and, when you have an evidence snippet, append a linked row in `data/candidates/candidate_sources.csv`. The helper checks controlled values, blocks likely duplicates by default, generates readable IDs, writes the row, and then runs the existing CSV validation. If validation fails after writing, the script restores the edited CSV files to their previous contents before exiting non-zero.
+
+Generated candidate IDs use normalized names plus entity prefixes such as `cand_univ_`, `cand_prog_`, `cand_fac_`, and `cand_lab_`; linked source IDs use `cand_src_`. If the readable ID already exists, the helper appends `_2`, `_3`, and so on.
+
+When `--evidence-snippet` is provided, the source row is associated to the new candidate with `associated_entity_type` and `associated_candidate_id`. If no evidence snippet is provided, the candidate row is still added, but the script prints a warning and does not create a source row. This workflow remains candidate intake only; it does **not** promote records into canonical `data/manual/` files.
+
+Examples:
+
+```bash
+python scripts/add_candidate.py university \
+  --university-name "Example University" \
+  --city "Example City" \
+  --state "CA" \
+  --seed-reason "Known HCI lab" \
+  --relevant-area "human_ai_interaction" \
+  --source-url "https://example.edu/hci" \
+  --evidence-snippet "Example evidence snippet" \
+  --confidence "medium" \
+  --notes "Needs manual review"
+```
+
+```bash
+python scripts/add_candidate.py program \
+  --university-name "Example University" \
+  --program-name "MS in Example HCI" \
+  --degree-type "MS" \
+  --department-or-school "School of Information" \
+  --format "in-person" \
+  --seed-reason "Relevant Human-AI curriculum" \
+  --relevant-area "human_ai_interaction" \
+  --source-url "https://example.edu/program" \
+  --evidence-snippet "Example evidence snippet" \
+  --confidence "medium" \
+  --notes "Needs admissions review"
+```
+
+```bash
+python scripts/add_candidate.py faculty \
+  --university-name "Example University" \
+  --faculty-name "Jane Example" \
+  --title "Associate Professor" \
+  --department "Computer Science" \
+  --lab-or-group "Example HAI Lab" \
+  --research-keywords "human-AI interaction; explainable AI; user studies" \
+  --relevant-area "human_ai_interaction" \
+  --source-url "https://example.edu/faculty/jane-example" \
+  --evidence-snippet "Example evidence snippet" \
+  --confidence "medium" \
+  --notes "Check whether they advise master's students"
+```
+
+```bash
+python scripts/add_candidate.py lab \
+  --university-name "Example University" \
+  --lab-name "Example Human-AI Lab" \
+  --director "Jane Example" \
+  --themes "human-AI collaboration; AI evaluation" \
+  --relevant-area "human_ai_interaction" \
+  --source-url "https://example.edu/lab" \
+  --evidence-snippet "Example evidence snippet" \
+  --confidence "medium" \
+  --notes "Needs publication review"
+```
+
+Add `--generate-report` to regenerate `reports/candidate_review.md` after a successful append and validation. Use `--allow-duplicate` only when you intentionally want a second candidate with the same duplicate-check key.
+
 ### Promote a reviewed candidate
 
 Use `docs/candidate_promotion_checklist.md` before moving anything into `data/manual/`. In short, promote only when the source is official or highly reliable, the evidence snippet supports the claim, names are normalized, duplicate concerns are resolved, `review_status` is `reviewed`, uncertainty is documented, a canonical ID has been assigned, and a related evidence record exists or is ready to add.
