@@ -63,3 +63,8 @@ Use the existing `confidence` values consistently:
 - `low`: the source is incomplete, indirect, or not ideal; use this for leads that need more review before promotion.
 
 Do not use confidence to make unsupported data look more certain. If evidence is weak, keep the candidate in review or reject it.
+
+
+## Relevant area evidence
+
+Use `relevant_area` as the candidate row's primary controlled classification. Use `secondary_relevant_areas` only for additional controlled categories that are supported by the same source evidence or clearly documented reviewer notes. This is especially helpful for interdisciplinary Information Science programs that combine HCI, UX research, social computing, and AI-product relevance. Leave secondary areas blank when evidence does not support additional categories.

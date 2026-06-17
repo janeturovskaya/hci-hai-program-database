@@ -76,7 +76,10 @@ def main() -> int:
                     name = row.get(NAME_FIELDS[entity_type], "").strip() or "(missing name/title)"
                     source_url = row.get("source_url", "").strip() or "(missing source_url)"
                     notes = row.get("notes", "").strip()
+                    secondary_areas = row.get("secondary_relevant_areas", "").strip()
                     lines.extend([f"- **{entity_type.title()} candidate `{candidate_id}`**: {name}", f"  - Source URL: {source_url}"])
+                    if secondary_areas:
+                        lines.append(f"  - Secondary relevant areas: {secondary_areas}")
                     for source in sources.get((entity_type, candidate_id), []):
                         snippet = source.get("evidence_snippet", "").strip()
                         if snippet:
@@ -89,7 +92,11 @@ def main() -> int:
                 lines.append("")
     REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
     REPORT_PATH.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
-    print(f"Wrote {REPORT_PATH.relative_to(ROOT)}")
+    try:
+        report_label = REPORT_PATH.relative_to(ROOT)
+    except ValueError:
+        report_label = REPORT_PATH
+    print(f"Wrote {report_label}")
     return 0
 
 

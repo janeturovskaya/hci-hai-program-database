@@ -118,6 +118,18 @@ def validate_row_values(
     if relevant_area and relevant_area not in allowed_relevant_areas:
         issues.append(ValidationIssue(table=table, row=row_number, message=f"relevant_area must be one of {sorted(allowed_relevant_areas)}"))
 
+    secondary_relevant_areas = values.get("secondary_relevant_areas", "").strip()
+    if secondary_relevant_areas:
+        secondary_values = [value.strip() for value in secondary_relevant_areas.split(";") if value.strip()]
+        for secondary_area in secondary_values:
+            if secondary_area not in allowed_relevant_areas:
+                issues.append(ValidationIssue(table=table, row=row_number, message=f"secondary_relevant_areas values must be one of {sorted(allowed_relevant_areas)}"))
+        duplicates = sorted({value for value in secondary_values if secondary_values.count(value) > 1})
+        if duplicates:
+            issues.append(ValidationIssue(table=table, row=row_number, message=f"secondary_relevant_areas contains duplicate values: {duplicates}"))
+        if relevant_area and relevant_area in secondary_values:
+            issues.append(ValidationIssue(table=table, row=row_number, message="secondary_relevant_areas must not repeat primary relevant_area"))
+
     return issues
 
 

@@ -95,6 +95,22 @@ class AddCandidateTests(unittest.TestCase):
         self.assertEqual(sources[0]["associated_candidate_id"], candidates[0]["candidate_id"])
         self.assertEqual(sources[0]["confidence"], "medium")
 
+
+    def test_add_candidate_writes_secondary_relevant_areas(self):
+        args = add_candidate.make_parser().parse_args([
+            "program",
+            "--university-name", "Example University",
+            "--program-name", "MS in Example HCI",
+            "--source-url", "https://example.edu/program",
+            "--relevant-area", "human_ai_interaction",
+            "--secondary-relevant-areas", "other",
+        ])
+        with redirect_stderr(io.StringIO()), redirect_stdout(io.StringIO()):
+            status = add_candidate.add_candidate(args)
+        self.assertEqual(status, 0)
+        row = self.read_rows(self.files["program"])[0]
+        self.assertEqual(row["secondary_relevant_areas"], "other")
+
     def test_add_program_without_evidence_prints_warning(self):
         args = add_candidate.make_parser().parse_args([
             "program",
