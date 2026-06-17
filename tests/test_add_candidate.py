@@ -153,6 +153,7 @@ class AddCandidateTests(unittest.TestCase):
             "--source-url", "https://example.edu/lab",
             "--evidence-snippet", "Example evidence snippet",
             "--confidence", "high",
+            "--claim-category", "hci_strength",
         ])
         with redirect_stdout(io.StringIO()):
             status = add_candidate.add_candidate(args)
@@ -161,6 +162,7 @@ class AddCandidateTests(unittest.TestCase):
         self.assertEqual(source["associated_entity_type"], "lab")
         self.assertEqual(source["associated_candidate_id"], "cand_lab_example_university_example_human_ai_lab")
         self.assertEqual(source["confidence"], "high")
+        self.assertEqual(source.get("claim_category", ""), "hci_strength")
 
 
 if __name__ == "__main__":

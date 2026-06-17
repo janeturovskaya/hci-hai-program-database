@@ -20,6 +20,25 @@ URL_FIELDS = {
     "lab_url",
     "publications_url",
 }
+ALLOWED_CLAIM_CATEGORIES = {
+    "program_existence",
+    "hci_strength",
+    "hai_strength",
+    "faculty_lab_fit",
+    "research_access_for_masters",
+    "quant_data_ai_curriculum",
+    "methods_fit",
+    "career_relevance",
+    "practical_fit",
+    "cost",
+    "deadline",
+    "prerequisites",
+    "online_available",
+    "duration",
+    "capstone",
+    "other",
+}
+
 CANDIDATE_ENTITY_TABLES = {
     "university": "candidate_universities",
     "program": "candidate_programs",
@@ -113,6 +132,10 @@ def validate_row_values(
     review_status = values.get("review_status", "").strip()
     if review_status and review_status not in allowed_review_statuses:
         issues.append(ValidationIssue(table=table, row=row_number, message=f"review_status must be one of {sorted(allowed_review_statuses)}"))
+
+    claim_category = values.get("claim_category", "").strip()
+    if claim_category and claim_category not in ALLOWED_CLAIM_CATEGORIES:
+        issues.append(ValidationIssue(table=table, row=row_number, message=f"claim_category must be one of {sorted(ALLOWED_CLAIM_CATEGORIES)}"))
 
     relevant_area = values.get("relevant_area", "").strip()
     if relevant_area and relevant_area not in allowed_relevant_areas:
