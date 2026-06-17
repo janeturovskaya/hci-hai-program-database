@@ -89,7 +89,7 @@ def validate_row_values(
 ) -> list[ValidationIssue]:
     issues: list[ValidationIssue] = []
 
-    for field in ("last_checked", "date_accessed", "discovered_date"):
+    for field in ("last_checked", "date_accessed", "discovered_date", "scoring_date"):
         value = values.get(field, "").strip()
         if value:
             try:
@@ -166,6 +166,65 @@ def validate_table(table: str, spec: dict[str, Any], root: Path, config: dict[st
     return issues
 
 
+SCORE_FIELDS = (
+    "hci_strength",
+    "hai_strength",
+    "faculty_lab_fit",
+    "research_access_for_masters",
+    "quant_data_ai_curriculum",
+    "methods_fit_for_uxr_psychology_background",
+    "career_relevance_for_ai_uxr",
+    "practical_fit",
+    "evidence_quality",
+)
+ALLOWED_SCORES = {"0", "1", "2", "3", "NA", "IE"}
+ALLOWED_SCORE_CONFIDENCE = {"high", "medium", "low"}
+
+
+def validate_program_scores(schema: dict[str, Any], root: Path) -> list[ValidationIssue]:
+    issues: list[ValidationIssue] = []
+    score_spec = schema.get("program_scores")
+    program_spec = schema.get("programs")
+    evidence_spec = schema.get("evidence")
+    if not score_spec:
+        return issues
+
+    _, programs = read_csv(root / program_spec["file"])
+    program_ids = {row.get("program_id", "").strip() for row in programs if row.get("program_id", "").strip()}
+    _, evidence_rows = read_csv(root / evidence_spec["file"])
+    evidence_ids = {row.get("evidence_id", "").strip() for row in evidence_rows if row.get("evidence_id", "").strip()}
+    _, score_rows = read_csv(root / score_spec["file"])
+
+    for index, row in enumerate(score_rows):
+        row_number = index + 2
+        program_id = row.get("program_id", "").strip()
+        if program_id and program_id not in program_ids:
+            issues.append(ValidationIssue(table="program_scores", row=row_number, message=f"program_id '{program_id}' was not found in programs"))
+
+        has_ie = False
+        for field in SCORE_FIELDS:
+            score = row.get(field, "").strip()
+            confidence = row.get(f"{field}_confidence", "").strip()
+            if score and score not in ALLOWED_SCORES:
+                issues.append(ValidationIssue(table="program_scores", row=row_number, message=f"{field} must be one of {sorted(ALLOWED_SCORES)}"))
+            if confidence and confidence not in ALLOWED_SCORE_CONFIDENCE:
+                issues.append(ValidationIssue(table="program_scores", row=row_number, message=f"{field}_confidence must be one of {sorted(ALLOWED_SCORE_CONFIDENCE)}"))
+            if not score and confidence:
+                issues.append(ValidationIssue(table="program_scores", row=row_number, message=f"{field}_confidence must be blank when {field} is blank"))
+            if score and score != "IE" and not confidence:
+                issues.append(ValidationIssue(table="program_scores", row=row_number, message=f"{field}_confidence is required when {field} is scored"))
+            if score == "IE":
+                has_ie = True
+        if has_ie and not row.get("missing_evidence_notes", "").strip():
+            issues.append(ValidationIssue(table="program_scores", row=row_number, message="missing_evidence_notes is required when any score is IE"))
+
+        source_values = [value.strip() for value in row.get("source_evidence_ids", "").split(";") if value.strip()]
+        for evidence_id in source_values:
+            if evidence_id not in evidence_ids:
+                issues.append(ValidationIssue(table="program_scores", row=row_number, message=f"source_evidence_ids includes unknown evidence_id '{evidence_id}'"))
+    return issues
+
+
 def validate_candidate_source_associations(schema: dict[str, Any], root: Path) -> list[ValidationIssue]:
     issues: list[ValidationIssue] = []
     candidate_ids: dict[str, set[str]] = {}
@@ -200,6 +259,7 @@ def validate_all(schema_path: Path = ROOT / "schema/manual_csv_schemas.yaml", co
     for table, spec in schema.items():
         issues.extend(validate_table(table, spec, ROOT, config))
     issues.extend(validate_candidate_source_associations(schema, ROOT))
+    issues.extend(validate_program_scores(schema, ROOT))
     return issues
 
 

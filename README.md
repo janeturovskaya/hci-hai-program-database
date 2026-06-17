@@ -314,3 +314,21 @@ python scripts/promote_candidate.py lab cand_lab_example_university_example_huma
   --create-evidence \
   --evidence-claim "The lab page describes HCI/HAI-relevant research themes."
 ```
+
+## Pilot scoring workflow
+
+Pilot scoring is exploratory and evidence-aware. It is meant to test whether the database can support structured review for HCI/HAI graduate-program fit; it is **not** a final ranking or recommendation list.
+
+Scores live in `data/manual/program_scores.csv` and are defined by `docs/scoring_rubric.md`. Each scored dimension must be traceable to existing canonical program data and listed evidence IDs. If the repository does not contain enough evidence for a dimension, mark that score as `IE` and explain the missing evidence in `missing_evidence_notes` rather than guessing.
+
+Use the helper to add or update one score row for an existing canonical program:
+
+```bash
+python scripts/score_program.py <program_id> --scorer <name> --hci-strength IE --missing-evidence-notes "Explain what is missing"
+```
+
+Use the report generator to produce a review report without ranking programs:
+
+```bash
+python scripts/generate_scoring_report.py
+```
