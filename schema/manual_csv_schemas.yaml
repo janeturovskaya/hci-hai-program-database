@@ -233,3 +233,37 @@ candidate_sources:
     - evidence_snippet
     - confidence
     - uncertainty_notes
+
+program_scores:
+  file: data/manual/program_scores.csv
+  primary_key: score_id
+  required:
+    - score_id
+    - program_id
+    - scorer
+  columns:
+    - score_id
+    - program_id
+    - scoring_date
+    - scorer
+    - hci_strength
+    - hci_strength_confidence
+    - hai_strength
+    - hai_strength_confidence
+    - faculty_lab_fit
+    - faculty_lab_fit_confidence
+    - research_access_for_masters
+    - research_access_for_masters_confidence
+    - quant_data_ai_curriculum
+    - quant_data_ai_curriculum_confidence
+    - methods_fit_for_uxr_psychology_background
+    - methods_fit_for_uxr_psychology_background_confidence
+    - career_relevance_for_ai_uxr
+    - career_relevance_for_ai_uxr_confidence
+    - practical_fit
+    - practical_fit_confidence
+    - evidence_quality
+    - evidence_quality_confidence
+    - overall_notes
+    - missing_evidence_notes
+    - source_evidence_ids
