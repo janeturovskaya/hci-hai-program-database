@@ -78,6 +78,19 @@ python scripts/find_potential_duplicates.py
 
 Do not invent or infer real university data. Future additions should rely on official university, program, faculty, or lab pages wherever possible. Every non-obvious claim should be backed by an evidence record, and uncertain claims should include explicit uncertainty notes.
 
+## Pilot batch workflow
+
+The next recommended human step is to test the workflow with a pilot batch of 3–5 real universities using official source URLs. The pilot is for exercising candidate intake, review, promotion, validation, and schema feedback before any larger data collection effort. Do not scrape the web, bulk import records, or add unreviewed facts.
+
+Pilot resources:
+
+- [`docs/pilot_batch_workflow.md`](docs/pilot_batch_workflow.md) explains the staged pilot process.
+- [`docs/source_evidence_rules.md`](docs/source_evidence_rules.md) defines acceptable source evidence and confidence levels.
+- [`docs/pilot_batch_checklist.md`](docs/pilot_batch_checklist.md) provides a short practical checklist.
+- [`examples/add_candidate_commands.sh`](examples/add_candidate_commands.sh) contains placeholder CLI examples that must be edited before use.
+
+Use `scripts/check_placeholder_data.py` before committing data changes to ensure placeholder example values were not accidentally added to real candidate or manual CSV files.
+
 ## Candidate intake workflow
 
 Candidate data is intentionally separate from canonical manual data. Use `data/candidates/` for rough leads that still need review, source checking, deduplication, and promotion decisions. Nothing in candidate CSV files should be treated as canonical until it is manually promoted into `data/manual/` with supporting evidence.
@@ -198,6 +211,49 @@ python scripts/add_candidate.py lab \
 
 Add `--generate-report` to regenerate `reports/candidate_review.md` after a successful append and validation. Use `--allow-duplicate` only when you intentionally want a second candidate with the same duplicate-check key.
 
-### Promote a reviewed candidate
+### Promote reviewed candidates
 
-Use `docs/candidate_promotion_checklist.md` before moving anything into `data/manual/`. In short, promote only when the source is official or highly reliable, the evidence snippet supports the claim, names are normalized, duplicate concerns are resolved, `review_status` is `reviewed`, uncertainty is documented, a canonical ID has been assigned, and a related evidence record exists or is ready to add.
+Use `scripts/promote_candidate.py` to move one reviewed row from `data/candidates/` into the matching canonical CSV in `data/manual/`. Promotion is intentionally a controlled manual step: it preserves traceability in notes, can create a canonical evidence row, updates the candidate `review_status` to `promoted`, and validates the CSV files before keeping the changes.
+
+Promotion expects the candidate row to have `review_status` set to `reviewed`. If you intentionally need to promote another status, pass `--allow-unreviewed`; the script will print a strong warning. This override should be rare and documented in candidate notes.
+
+Promotion does **not** verify facts, scrape the web, or infer missing institutional details. It only moves reviewed, sourced data that a human has already checked into canonical CSV files.
+
+Canonical IDs may be supplied with `--canonical-id`. If omitted, the script generates readable deterministic IDs from normalized name fields using these prefixes: `univ_`, `prog_`, `fac_`, and `lab_`. If an ID already exists, generated IDs receive `_2`, `_3`, and so on. For programs, faculty, and labs, pass `--university-id` unless the candidate university name matches exactly one canonical university in `data/manual/universities.csv`.
+
+Use `--create-evidence` with `--evidence-claim` to create a row in `data/manual/evidence.csv` for the promoted canonical entity. By default, the first linked candidate source row by `source_id` is used; pass `--source-id cand_src_...` to choose a specific linked source. If there is no linked candidate source, the script uses the candidate row's `source_url` and prints a warning.
+
+If validation fails after writing, `scripts/promote_candidate.py` restores every modified CSV file to its previous contents, prints the validation errors, and exits non-zero. Add `--generate-report` to regenerate `reports/candidate_review.md` after a successful promotion.
+
+Examples:
+
+```bash
+python scripts/promote_candidate.py university cand_univ_example_university \
+  --canonical-id univ_example_university \
+  --create-evidence \
+  --evidence-claim "Example University has a relevant HCI/HAI candidate source under review."
+```
+
+```bash
+python scripts/promote_candidate.py program cand_prog_example_university_ms_example_hci \
+  --canonical-id prog_example_university_ms_example_hci \
+  --university-id univ_example_university \
+  --create-evidence \
+  --evidence-claim "The program page describes graduate-level HCI/HAI-relevant curriculum."
+```
+
+```bash
+python scripts/promote_candidate.py faculty cand_fac_example_university_jane_example \
+  --canonical-id fac_example_university_jane_example \
+  --university-id univ_example_university \
+  --create-evidence \
+  --evidence-claim "The faculty profile describes HCI/HAI-relevant research."
+```
+
+```bash
+python scripts/promote_candidate.py lab cand_lab_example_university_example_human_ai_lab \
+  --canonical-id lab_example_university_example_human_ai_lab \
+  --university-id univ_example_university \
+  --create-evidence \
+  --evidence-claim "The lab page describes HCI/HAI-relevant research themes."
+```

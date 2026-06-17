@@ -1,6 +1,6 @@
 # Candidate promotion checklist
 
-Candidate records in `data/candidates/` are rough intake records. They are not canonical database entries until a reviewer promotes them into the matching `data/manual/` CSV file and adds or prepares supporting evidence.
+Candidate records in `data/candidates/` are rough intake records. They are not canonical database entries until a reviewer promotes them into the matching `data/manual/` CSV file and adds or prepares supporting evidence. Use `python scripts/promote_candidate.py ...` for the promotion step after completing this checklist.
 
 ## Promotion criteria
 
@@ -15,7 +15,7 @@ Promote a candidate only when all of the following are true:
 - A canonical ID has been assigned for the target manual CSV.
 - A related evidence record exists or is ready to be added to `data/manual/evidence.csv`.
 
-After promotion, update the candidate `review_status` to `promoted` or keep an audit note explaining the promotion decision.
+After promotion, confirm that `scripts/promote_candidate.py` updated the candidate `review_status` to `promoted`, created the intended canonical row, created evidence when requested, and passed validation. If validation fails, the CLI rolls back modified CSV files before exiting non-zero.
 
 ## Rejection reasons
 
