@@ -22,8 +22,11 @@ jobs:
       - name: Install dependencies
         run: python -m pip install -r requirements.txt
 
-      - name: Validate manual data
+      - name: Validate manual and candidate data
         run: python scripts/validate_manual_data.py
+
+      - name: Generate candidate review report
+        run: python scripts/generate_candidate_review.py
 
       - name: Run tests
         run: python -m unittest discover

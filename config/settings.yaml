@@ -15,4 +15,23 @@ validation:
     - low
     - medium
     - high
+  allowed_review_statuses:
+    - discovered
+    - needs_source
+    - needs_review
+    - reviewed
+    - promoted
+    - rejected
+  allowed_relevant_areas:
+    - core_hci
+    - human_ai_interaction
+    - human_centered_ai
+    - social_computing
+    - responsible_ai
+    - computational_social_science
+    - accessibility
+    - human_robot_interaction
+    - mixed_methods_uxr
+    - ai_product_evaluation
+    - other
   fuzzy_duplicate_threshold: 90
