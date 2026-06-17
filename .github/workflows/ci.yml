@@ -28,5 +28,8 @@ jobs:
       - name: Generate candidate review report
         run: python scripts/generate_candidate_review.py
 
+      - name: Check placeholder data
+        run: python scripts/check_placeholder_data.py
+
       - name: Run tests
         run: python -m unittest discover

@@ -78,6 +78,19 @@ python scripts/find_potential_duplicates.py
 
 Do not invent or infer real university data. Future additions should rely on official university, program, faculty, or lab pages wherever possible. Every non-obvious claim should be backed by an evidence record, and uncertain claims should include explicit uncertainty notes.
 
+## Pilot batch workflow
+
+The next recommended human step is to test the workflow with a pilot batch of 3–5 real universities using official source URLs. The pilot is for exercising candidate intake, review, promotion, validation, and schema feedback before any larger data collection effort. Do not scrape the web, bulk import records, or add unreviewed facts.
+
+Pilot resources:
+
+- [`docs/pilot_batch_workflow.md`](docs/pilot_batch_workflow.md) explains the staged pilot process.
+- [`docs/source_evidence_rules.md`](docs/source_evidence_rules.md) defines acceptable source evidence and confidence levels.
+- [`docs/pilot_batch_checklist.md`](docs/pilot_batch_checklist.md) provides a short practical checklist.
+- [`examples/add_candidate_commands.sh`](examples/add_candidate_commands.sh) contains placeholder CLI examples that must be edited before use.
+
+Use `scripts/check_placeholder_data.py` before committing data changes to ensure placeholder example values were not accidentally added to real candidate or manual CSV files.
+
 ## Candidate intake workflow
 
 Candidate data is intentionally separate from canonical manual data. Use `data/candidates/` for rough leads that still need review, source checking, deduplication, and promotion decisions. Nothing in candidate CSV files should be treated as canonical until it is manually promoted into `data/manual/` with supporting evidence.
