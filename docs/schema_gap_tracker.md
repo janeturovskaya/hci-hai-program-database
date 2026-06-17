@@ -36,3 +36,4 @@ Use this living document to track schema, validation, reporting, scoring, and wo
 | gap_id | date_found | source | affected_table | affected_field | issue_type | description | example | proposed_change | priority | status | notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | _Add rows after a pilot run._ |  |  |  |  |  |  |  |  |  |  |  |
+| gap_001 | 2026-06-17 | pilot_001_hci_hai_programs | candidate_programs | relevant_area | field_too_narrow | Some programs fit multiple relevant areas but the schema allows one controlled value | Cornell MPS and Berkeley MIMS may span UX, HCI, social computing, and AI/product pathways | Consider allowing multi-value relevant areas or adding secondary_relevant_areas | medium | open | Discovered during first pilot batch |
