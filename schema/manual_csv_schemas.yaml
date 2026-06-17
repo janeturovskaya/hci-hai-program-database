@@ -129,3 +129,103 @@ evidence:
     - date_accessed
     - confidence
     - uncertainty_notes
+candidate_universities:
+  file: data/candidates/candidate_universities.csv
+  primary_key: candidate_id
+  required:
+    - candidate_id
+    - source_url
+    - discovered_date
+    - review_status
+  columns:
+    - candidate_id
+    - university_name
+    - city
+    - state
+    - seed_reason
+    - relevant_area
+    - source_url
+    - discovered_date
+    - review_status
+    - notes
+candidate_programs:
+  file: data/candidates/candidate_programs.csv
+  primary_key: candidate_id
+  required:
+    - candidate_id
+    - source_url
+    - discovered_date
+    - review_status
+  columns:
+    - candidate_id
+    - university_name
+    - program_name
+    - degree_type
+    - department_or_school
+    - format
+    - seed_reason
+    - relevant_area
+    - source_url
+    - discovered_date
+    - review_status
+    - notes
+candidate_faculty:
+  file: data/candidates/candidate_faculty.csv
+  primary_key: candidate_id
+  required:
+    - candidate_id
+    - source_url
+    - discovered_date
+    - review_status
+  columns:
+    - candidate_id
+    - university_name
+    - faculty_name
+    - title
+    - department
+    - lab_or_group
+    - research_keywords
+    - relevant_area
+    - source_url
+    - discovered_date
+    - review_status
+    - notes
+candidate_labs:
+  file: data/candidates/candidate_labs.csv
+  primary_key: candidate_id
+  required:
+    - candidate_id
+    - source_url
+    - discovered_date
+    - review_status
+  columns:
+    - candidate_id
+    - university_name
+    - lab_name
+    - director
+    - themes
+    - relevant_area
+    - source_url
+    - discovered_date
+    - review_status
+    - notes
+candidate_sources:
+  file: data/candidates/candidate_sources.csv
+  primary_key: source_id
+  required:
+    - source_id
+    - source_url
+    - date_accessed
+    - evidence_snippet
+    - confidence
+  columns:
+    - source_id
+    - source_type
+    - source_title
+    - source_url
+    - associated_entity_type
+    - associated_candidate_id
+    - date_accessed
+    - evidence_snippet
+    - confidence
+    - uncertainty_notes
