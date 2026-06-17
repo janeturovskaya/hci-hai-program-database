@@ -91,6 +91,19 @@ Pilot resources:
 
 Use `scripts/check_placeholder_data.py` before committing data changes to ensure placeholder example values were not accidentally added to real candidate or manual CSV files.
 
+## After the pilot: findings and schema gaps
+
+After the first 3–5 university pilot, pause before scaling to a larger database. Review what worked, what was confusing, and what schema or workflow gaps should be fixed first.
+
+Post-pilot resources:
+
+- [`docs/pilot_findings_template.md`](docs/pilot_findings_template.md) provides a reusable findings template.
+- [`docs/schema_gap_tracker.md`](docs/schema_gap_tracker.md) tracks schema and workflow gaps discovered during pilot runs.
+- [`docs/pilot_readiness_checklist.md`](docs/pilot_readiness_checklist.md) helps confirm the project is ready before adding real pilot data.
+- [`data/processed/pilot_runs/README.md`](data/processed/pilot_runs/README.md) explains where to store human-written pilot summaries.
+
+Use `python scripts/pilot_status.py` for a lightweight status summary of candidate statuses, candidate sources, canonical row counts, promoted/rejected totals, and source-linkage warnings. The script summarizes workflow state only; it does not infer facts or verify source quality.
+
 ## Candidate intake workflow
 
 Candidate data is intentionally separate from canonical manual data. Use `data/candidates/` for rough leads that still need review, source checking, deduplication, and promotion decisions. Nothing in candidate CSV files should be treated as canonical until it is manually promoted into `data/manual/` with supporting evidence.

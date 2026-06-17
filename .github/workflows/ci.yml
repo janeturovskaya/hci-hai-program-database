@@ -31,5 +31,8 @@ jobs:
       - name: Check placeholder data
         run: python scripts/check_placeholder_data.py
 
+      - name: Smoke test pilot status
+        run: python scripts/pilot_status.py
+
       - name: Run tests
         run: python -m unittest discover
