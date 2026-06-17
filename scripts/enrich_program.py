@@ -16,11 +16,11 @@ if str(SCRIPT_DIR) not in sys.path:
 
 from add_candidate import slugify, unique_id
 from promote_candidate import write_rows
-from validate_manual_data import ROOT, read_csv, validate_all, load_simple_yaml
+from validate_manual_data import ROOT, ALLOWED_CLAIM_CATEGORIES, read_csv, validate_all, load_simple_yaml
 
 PROGRAMS_FILE = ROOT / "data/manual/programs.csv"
 EVIDENCE_FILE = ROOT / "data/manual/evidence.csv"
-EVIDENCE_COLUMNS = ("evidence_id", "entity_type", "entity_id", "claim", "source_url", "source_type", "quote_or_snippet", "date_accessed", "confidence", "uncertainty_notes")
+EVIDENCE_COLUMNS = ("evidence_id", "entity_type", "entity_id", "claim", "source_url", "source_type", "quote_or_snippet", "date_accessed", "confidence", "uncertainty_notes", "claim_category")
 UPDATE_FIELDS = (
     "duration", "research_orientation", "thesis_or_capstone", "online_available",
     "application_deadline", "prerequisites", "cost_notes", "official_url",
@@ -96,6 +96,8 @@ def validate_args(args: argparse.Namespace, updates: dict[str, str]) -> None:
         raise ValueError("--source-url must be an http(s) URL when evidence is provided.")
     if args.confidence not in allowed_confidence():
         raise ValueError(f"--confidence must be one of {sorted(allowed_confidence())}.")
+    if args.claim_category and args.claim_category not in ALLOWED_CLAIM_CATEGORIES:
+        raise ValueError(f"--claim-category must be one of {sorted(ALLOWED_CLAIM_CATEGORIES)}.")
 
 
 def find_program(rows: list[dict[str, str]], program_id: str) -> dict[str, str]:
@@ -121,6 +123,7 @@ def make_evidence_row(args: argparse.Namespace, today: str) -> dict[str, str]:
         "date_accessed": args.date_accessed or today,
         "confidence": args.confidence,
         "uncertainty_notes": (uncertainty + " " + trace).strip(),
+        "claim_category": args.claim_category or "",
     }
 
 
@@ -179,6 +182,7 @@ def make_parser() -> argparse.ArgumentParser:
     parser.add_argument("--source-type", default="official_page")
     parser.add_argument("--date-accessed", default="")
     parser.add_argument("--uncertainty-notes", default="")
+    parser.add_argument("--claim-category", default="")
     parser.add_argument("--no-evidence", action="store_true")
     parser.add_argument("--generate-report", action="store_true")
     return parser

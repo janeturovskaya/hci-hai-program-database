@@ -15,7 +15,7 @@ if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
 from add_candidate import slugify, unique_id
-from validate_manual_data import ROOT, read_csv, validate_all
+from validate_manual_data import ROOT, ALLOWED_CLAIM_CATEGORIES, read_csv, validate_all
 
 CANDIDATE_CONFIG = {
     "university": {
@@ -58,7 +58,7 @@ CANDIDATE_CONFIG = {
 
 SOURCE_FILE = ROOT / "data/candidates/candidate_sources.csv"
 EVIDENCE_FILE = ROOT / "data/manual/evidence.csv"
-EVIDENCE_COLUMNS = ("evidence_id", "entity_type", "entity_id", "claim", "source_url", "source_type", "quote_or_snippet", "date_accessed", "confidence", "uncertainty_notes")
+EVIDENCE_COLUMNS = ("evidence_id", "entity_type", "entity_id", "claim", "source_url", "source_type", "quote_or_snippet", "date_accessed", "confidence", "uncertainty_notes", "claim_category")
 
 
 def write_rows(path: Path, columns: Iterable[str], rows: list[dict[str, str]]) -> None:
@@ -166,7 +166,7 @@ def build_evidence_row(args: argparse.Namespace, candidate: dict[str, str], enti
     evidence_id = args.evidence_id or unique_id("ev_", [args.entity_type, entity_id, slugify(args.evidence_claim)[:40]], existing)
     uncertainty = (source or {}).get("uncertainty_notes", "").strip()
     trace = f"Promoted from candidate_id {candidate['candidate_id']}."
-    return {"evidence_id": evidence_id, "entity_type": args.entity_type, "entity_id": entity_id, "claim": args.evidence_claim, "source_url": source_url, "source_type": (source or {}).get("source_type", "") or "candidate_source", "quote_or_snippet": (source or {}).get("evidence_snippet", ""), "date_accessed": (source or {}).get("date_accessed", "") or today, "confidence": (source or {}).get("confidence", "") or "medium", "uncertainty_notes": (uncertainty + " " + trace).strip()}
+    return {"evidence_id": evidence_id, "entity_type": args.entity_type, "entity_id": entity_id, "claim": args.evidence_claim, "source_url": source_url, "source_type": (source or {}).get("source_type", "") or "candidate_source", "quote_or_snippet": (source or {}).get("evidence_snippet", ""), "date_accessed": (source or {}).get("date_accessed", "") or today, "confidence": (source or {}).get("confidence", "") or "medium", "uncertainty_notes": (uncertainty + " " + trace).strip(), "claim_category": args.claim_category or (source or {}).get("claim_category", "")}
 
 
 def run_validation_or_rollback(backups: dict[Path, str]) -> bool:
@@ -192,6 +192,8 @@ def promote_candidate(args: argparse.Namespace) -> int:
             print("WARNING: Promoting a candidate that is not reviewed. Use this only for intentional exceptions.", file=sys.stderr)
         if args.create_evidence and not args.evidence_claim:
             raise ValueError("--evidence-claim is required when --create-evidence is provided.")
+        if args.claim_category and args.claim_category not in ALLOWED_CLAIM_CATEGORIES:
+            raise ValueError(f"--claim-category must be one of {sorted(ALLOWED_CLAIM_CATEGORIES)}.")
         university_id = "" if args.entity_type == "university" else resolve_university_id(candidate, args.university_id)
         entity_id = canonical_id(args.entity_type, candidate, args.canonical_id)
         config = CANDIDATE_CONFIG[args.entity_type]
@@ -236,6 +238,7 @@ def make_parser() -> argparse.ArgumentParser:
     parser.add_argument("--evidence-id", default="")
     parser.add_argument("--evidence-claim", default="")
     parser.add_argument("--source-id", default="")
+    parser.add_argument("--claim-category", default="")
     parser.add_argument("--generate-report", action="store_true")
     return parser
 

@@ -33,7 +33,7 @@ class PromoteCandidateTests(unittest.TestCase):
         self.candidates["faculty"].write_text("candidate_id,university_name,faculty_name,title,department,lab_or_group,research_keywords,relevant_area,source_url,discovered_date,review_status,notes\n", encoding="utf-8")
         self.candidates["lab"].write_text("candidate_id,university_name,lab_name,director,themes,relevant_area,source_url,discovered_date,review_status,notes\n", encoding="utf-8")
         self.sources = self.root / "candidates/candidate_sources.csv"
-        self.sources.write_text("source_id,source_type,source_title,source_url,associated_entity_type,associated_candidate_id,date_accessed,evidence_snippet,confidence,uncertainty_notes\n", encoding="utf-8")
+        self.sources.write_text("source_id,source_type,source_title,source_url,associated_entity_type,associated_candidate_id,date_accessed,evidence_snippet,confidence,uncertainty_notes,claim_category\n", encoding="utf-8")
         self.evidence = self.root / "manual/evidence.csv"
         self.evidence.write_text(",".join(promote_candidate.EVIDENCE_COLUMNS) + "\n", encoding="utf-8")
         self.config = {k: {**v, "candidate_file": self.candidates[k], "manual_file": self.manual[k]} for k, v in promote_candidate.CANDIDATE_CONFIG.items()}
@@ -102,9 +102,10 @@ class PromoteCandidateTests(unittest.TestCase):
     def test_evidence_creation_from_linked_source(self):
         self.add_row(self.candidates["university"], {"candidate_id":"cand_univ_example","university_name":"Example University","city":"City","state":"EX","source_url":"https://example.edu","discovered_date":"2026-01-01","review_status":"reviewed"})
         self.add_row(self.sources, {"source_id":"cand_src_a","source_type":"official_page","source_url":"https://example.edu/about","associated_entity_type":"university","associated_candidate_id":"cand_univ_example","date_accessed":"2026-01-02","evidence_snippet":"snippet","confidence":"high","uncertainty_notes":"note"})
-        rc = promote_candidate.promote_candidate(self.parse(["university", "cand_univ_example", "--create-evidence", "--evidence-claim", "claim"]))
+        rc = promote_candidate.promote_candidate(self.parse(["university", "cand_univ_example", "--create-evidence", "--evidence-claim", "claim", "--claim-category", "program_existence"]))
         self.assertEqual(rc, 0)
         self.assertEqual(self.rows(self.evidence)[0]["quote_or_snippet"], "snippet")
+        self.assertEqual(self.rows(self.evidence)[0].get("claim_category", ""), "program_existence")
 
     def test_evidence_fallback_without_linked_source(self):
         self.add_row(self.candidates["university"], {"candidate_id":"cand_univ_example","university_name":"Example University","city":"City","state":"EX","source_url":"https://example.edu","discovered_date":"2026-01-01","review_status":"reviewed"})

@@ -48,7 +48,7 @@ The initial manual templates are empty and contain headers only:
 - `data/manual/labs.csv`
 - `data/manual/evidence.csv`
 
-Schemas are defined in `schema/manual_csv_schemas.yaml`. Evidence rows should be used to support specific claims with a source URL, source type, snippet, access date, confidence level, and uncertainty notes.
+Schemas are defined in `schema/manual_csv_schemas.yaml`. Evidence rows should be used to support specific claims with a source URL, source type, snippet, access date, confidence level, uncertainty notes, and optional `claim_category` that identifies what kind of claim the evidence supports.
 
 ## Setup
 
@@ -113,7 +113,7 @@ Canonical enrichment should be evidence-backed because fields such as duration, 
 
 Supported update fields are: `duration`, `research_orientation`, `thesis_or_capstone`, `online_available`, `application_deadline`, `prerequisites`, `cost_notes`, `official_url`, `source_url`, and `notes`. Protected identity fields such as `program_id`, `university_id`, `program_name`, `degree_type`, `department_or_school`, and `format` are intentionally not accepted by this CLI.
 
-Evidence-backed updates require `--evidence-claim`, `--source-url`, `--quote-or-snippet`, and `--confidence`. Optional evidence flags are `--source-type` (default: `official_page`), `--date-accessed` (default: today), and `--uncertainty-notes`. `--source-url` must be HTTP/HTTPS, and `--confidence` must use the controlled confidence values from `config/settings.yaml`.
+Evidence-backed updates require `--evidence-claim`, `--source-url`, `--quote-or-snippet`, and `--confidence`. Optional evidence flags are `--source-type` (default: `official_page`), `--date-accessed` (default: today), `--uncertainty-notes`, and `--claim-category`. `--source-url` must be HTTP/HTTPS, and `--confidence` must use the controlled confidence values from `config/settings.yaml`.
 
 Blank argument values do not clear existing data by accident. To intentionally clear a supported enrichment field, pass `--clear-field FIELD_NAME`; the flag may be repeated. Notes are appended by default with an enrichment separator. Use `--replace-notes` only when the existing notes should intentionally be replaced.
 
@@ -176,7 +176,7 @@ Candidate entity rows keep `relevant_area` as the primary classification. Use op
 
 ### Add source evidence
 
-Add source rows to `data/candidates/candidate_sources.csv` with a `source_id`, `source_url`, `date_accessed`, `evidence_snippet`, and `confidence`. When the source supports a specific candidate, set `associated_entity_type` to `university`, `program`, `faculty`, or `lab`, and set `associated_candidate_id` to an existing candidate ID in the matching candidate CSV.
+Add source rows to `data/candidates/candidate_sources.csv` with a `source_id`, `source_url`, `date_accessed`, `evidence_snippet`, `confidence`, and optional `claim_category`. When the source supports a specific candidate, set `associated_entity_type` to `university`, `program`, `faculty`, or `lab`, and set `associated_candidate_id` to an existing candidate ID in the matching candidate CSV.
 
 ### Validate candidates
 
@@ -278,7 +278,7 @@ Promotion does **not** verify facts, scrape the web, or infer missing institutio
 
 Canonical IDs may be supplied with `--canonical-id`. If omitted, the script generates readable deterministic IDs from normalized name fields using these prefixes: `univ_`, `prog_`, `fac_`, and `lab_`. If an ID already exists, generated IDs receive `_2`, `_3`, and so on. For programs, faculty, and labs, pass `--university-id` unless the candidate university name matches exactly one canonical university in `data/manual/universities.csv`.
 
-Use `--create-evidence` with `--evidence-claim` to create a row in `data/manual/evidence.csv` for the promoted canonical entity. By default, the first linked candidate source row by `source_id` is used; pass `--source-id cand_src_...` to choose a specific linked source. If there is no linked candidate source, the script uses the candidate row's `source_url` and prints a warning.
+Use `--create-evidence` with `--evidence-claim` and optional `--claim-category` to create a row in `data/manual/evidence.csv` for the promoted canonical entity. By default, the first linked candidate source row by `source_id` is used; pass `--source-id cand_src_...` to choose a specific linked source. If there is no linked candidate source, the script uses the candidate row's `source_url` and prints a warning.
 
 If validation fails after writing, `scripts/promote_candidate.py` restores every modified CSV file to its previous contents, prints the validation errors, and exits non-zero. Add `--generate-report` to regenerate `reports/candidate_review.md` after a successful promotion.
 
@@ -319,7 +319,7 @@ python scripts/promote_candidate.py lab cand_lab_example_university_example_huma
 
 Pilot scoring is exploratory and evidence-aware. It is meant to test whether the database can support structured review for HCI/HAI graduate-program fit; it is **not** a final ranking or recommendation list.
 
-Scores live in `data/manual/program_scores.csv` and are defined by `docs/scoring_rubric.md`. Each scored dimension must be traceable to existing canonical program data and listed evidence IDs. If the repository does not contain enough evidence for a dimension, mark that score as `IE` and explain the missing evidence in `missing_evidence_notes` rather than guessing.
+Scores live in `data/manual/program_scores.csv` and are defined by `docs/scoring_rubric.md`. Each scored dimension must be traceable to existing canonical program data and listed evidence IDs; prefer evidence with a relevant `claim_category` when available. If the repository does not contain enough evidence for a dimension, mark that score as `IE` and explain the missing evidence in `missing_evidence_notes` rather than guessing.
 
 Use the helper to add or update one score row for an existing canonical program:
 

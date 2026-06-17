@@ -68,3 +68,9 @@ Do not use confidence to make unsupported data look more certain. If evidence is
 ## Relevant area evidence
 
 Use `relevant_area` as the candidate row's primary controlled classification. Use `secondary_relevant_areas` only for additional controlled categories that are supported by the same source evidence or clearly documented reviewer notes. This is especially helpful for interdisciplinary Information Science programs that combine HCI, UX research, social computing, and AI-product relevance. Leave secondary areas blank when evidence does not support additional categories.
+
+## Claim categories
+
+Canonical evidence and candidate source rows may include optional `claim_category` values. The category identifies what kind of claim the evidence supports, for example `program_existence`, `hci_strength`, `hai_strength`, `faculty_lab_fit`, `research_access_for_masters`, `quant_data_ai_curriculum`, `methods_fit`, `career_relevance`, `practical_fit`, `cost`, `deadline`, `prerequisites`, `online_available`, `duration`, `capstone`, or `other`.
+
+Legacy rows may leave `claim_category` blank. New or edited evidence should use the most specific supported category. Do not assign a category unless the quoted snippet actually supports that claim; use uncertainty notes when the evidence is indirect.
