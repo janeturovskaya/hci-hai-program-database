@@ -141,7 +141,6 @@ This report summarizes only manually provided candidate intake data. It does not
 - **Program candidate `cand_prog_university_of_chicago_macss`**: MA in Computational Social Science
   - Source URL: https://macss.uchicago.edu/
   - Secondary relevant areas: mixed_methods_uxr
-  - Evidence snippet: UChicago MACSS says students gain computational methods and programming expertise while working across social and behavioral sciences and computer science.
   - Notes: Computational social science adjacent candidate; review HCI/AI-product relevance later.
 
 ### Relevant area: core_hci
@@ -155,7 +154,6 @@ This report summarizes only manually provided candidate intake data. It does not
 - **Program candidate `cand_prog_depaul_university_ms_hci`**: MS Human Computer Interaction
   - Source URL: https://www.depaul.edu/academics/programs/ms-in-human-computer-interaction
   - Secondary relevant areas: mixed_methods_uxr
-  - Evidence snippet: DePaul says the MS HCI prepares students to ideate, design, implement, and evaluate technologies so they are useful and usable, integrating computer science, design, and social sciences.
   - Notes: Dedicated HCI candidate and flexible-format example; lightweight intake only.
 
 #### University: Drexel University
@@ -167,7 +165,10 @@ This report summarizes only manually provided candidate intake data. It does not
 - **Program candidate `cand_prog_drexel_university_hci_ux`**: MS in Human-Computer Interaction and User Experience
   - Source URL: https://drexel.edu/cci/academics/masters-programs/ms-in-information-human-computer-interaction-ux/
   - Secondary relevant areas: mixed_methods_uxr
-  - Evidence snippet: Drexel says its HCI/UX master’s is for students interested in designing technologies that meet human needs and notes successful students from psychology, sociology, and anthropology.
+  - Evidence snippet: Direct program evidence: Drexel says MS-HCI/UX teaches quantitative and qualitative research methods, idea generation, prototyping, evaluation, foundations of HCI and UX, accessibility, AI applications, and empirical research methods.
+  - Evidence snippet: Direct program evidence: Drexel frames the degree as UX design and UX research for the AI age, names human-AI interaction coursework, and says students may select electives for a human-centered AI pathway including Applied Artificial Intelligence and Recommender Systems.
+  - Evidence snippet: Direct program evidence: Drexel says coursework emphasizes hands-on projects and teamwork, the program culminates in a collaborative capstone project, and graduate co-op is available for on-campus full-time students.
+  - Evidence snippet: Direct program evidence: Drexel says graduates leave with a portfolio and lists employers including The Philadelphia Inquirer, Chatham Financial, Lowe’s, Pluto TV, Accenture, Morgan Stanley, UPMC, and Shopify.
   - Notes: Dedicated HCI/UX candidate; lightweight intake only.
 
 #### University: Indiana University
@@ -179,7 +180,10 @@ This report summarizes only manually provided candidate intake data. It does not
 - **Program candidate `cand_prog_indiana_university_hcid`**: Master of Science in Human-Computer Interaction Design
   - Source URL: https://luddy.iu.edu/academics/masters/hcid.html
   - Secondary relevant areas: mixed_methods_uxr
-  - Evidence snippet: Indiana describes the HCI/d program as a two-year STEM program with hands-on studio courses, electives, UX design, interaction strategy, and user research.
+  - Evidence snippet: Direct program evidence: Indiana says the two-year on-campus STEM HCI/d MS uses required studios with real clients plus core courses in interaction design, design strategy, and user research; electives can include HRI, experience design, advanced prototyping, VR, visual design, and information architecture.
+  - Evidence snippet: Indirect school/department context: Luddy describes HCI/d as integrating social science, aesthetic crafting, cutting-edge technologies, and business strategy, with curriculum methods including co-design, speculative design, design criticism, alignment diagrams, and probe studies.
+  - Evidence snippet: Direct program evidence: Indiana explicitly says students can blend backgrounds such as data science or AI with HCI/d studies and lists Human-Robot Interaction among past or current electives.
+  - Evidence snippet: Direct program evidence: Indiana reports HCID alumni roles such as UX Designer, UX Researcher, Product Manager, UX Engineer, Product Designer, User Experience Designer, Design Researcher, and Product Strategist, with example employers including Google, Deloitte, SeatGeek, and ServiceNow.
   - Notes: Dedicated HCI/design candidate; lightweight intake only.
 
 #### University: Rochester Institute of Technology
@@ -191,7 +195,6 @@ This report summarizes only manually provided candidate intake data. It does not
 - **Program candidate `cand_prog_rochester_institute_of_technology_hci_ms`**: Human-Computer Interaction MS
   - Source URL: https://www.rit.edu/study/human-computer-interaction-ms
   - Secondary relevant areas: mixed_methods_uxr
-  - Evidence snippet: RIT describes its HCI master’s as studying how people interact with websites, software, and systems to design intuitive technology experiences.
   - Notes: Dedicated HCI candidate; lightweight intake only.
 
 #### University: University of California, Berkeley
@@ -224,7 +227,6 @@ This report summarizes only manually provided candidate intake data. It does not
 - **Program candidate `cand_prog_university_of_california_irvine_mhcid`**: Master of Human-Computer Interaction and Design
   - Source URL: https://mhcid.ics.uci.edu/
   - Secondary relevant areas: mixed_methods_uxr
-  - Evidence snippet: UC Irvine says the MHCID program integrates theory with hands-on experience for professionals seeking expertise and leadership in human-centered design.
   - Notes: Dedicated/professional HCI design candidate; lightweight intake only.
 
 #### University: University of Maryland
@@ -236,7 +238,10 @@ This report summarizes only manually provided candidate intake data. It does not
 - **Program candidate `cand_prog_university_of_maryland_hcim`**: Master of Science in Human-Computer Interaction
   - Source URL: https://ischool.umd.edu/academics/masters-programs/master-of-science-in-human-computer-interaction/
   - Secondary relevant areas: mixed_methods_uxr
-  - Evidence snippet: UMD says the HCIM program prepares students to design, evaluate, and implement new information technologies and interfaces that are usable and appealing.
+  - Evidence snippet: Direct program evidence: UMD says HCIM is a 30-credit, two-year, STEM-certified, full- or part-time program with core courses in programming, HCI, UX, UI, research methods, data analysis, and design, plus electives and capstone or thesis.
+  - Evidence snippet: Direct program evidence: UMD lists cross-disciplinary elective areas including data visualization and design, social computing, machine learning, Generative AI in UX, usability testing, visual design, and information architecture.
+  - Evidence snippet: Direct program evidence: all HCIM students complete either a two-semester capstone with clients, user research, and prototypes for real-world contexts or a two-semester thesis culminating in a defended 70- to 100-page research thesis supervised by faculty.
+  - Evidence snippet: Direct program evidence: UMD reports hands-on learning with partner organizations and industry professionals, access to Washington D.C. internship and job opportunities, and 94% employed within one year.
   - Notes: Dedicated HCIM candidate; lightweight intake only.
 
 ### Relevant area: human_centered_ai
@@ -250,7 +255,6 @@ This report summarizes only manually provided candidate intake data. It does not
 - **Program candidate `cand_prog_northwestern_university_msai`**: Master of Science in Artificial Intelligence
   - Source URL: https://www.mccormick.northwestern.edu/artificial-intelligence/overview/
   - Secondary relevant areas: human_ai_interaction
-  - Evidence snippet: Northwestern says MSAI graduates have technical AI skills and an understanding of the human environments in which the systems they build will be deployed.
   - Notes: Human-AI adjacent candidate; review HCI/UX fit carefully later.
 
 ### Relevant area: mixed_methods_uxr
@@ -264,7 +268,6 @@ This report summarizes only manually provided candidate intake data. It does not
 - **Program candidate `cand_prog_arizona_state_university_online_ms_ux`**: Online Master of Science in User Experience
   - Source URL: https://asuonline.asu.edu/online-degree-programs/graduate/online-user-experience-masters/
   - Secondary relevant areas: other
-  - Evidence snippet: ASU Online says the MS in User Experience combines human systems engineering for human-centered research, graphic information technology for user-centered design, and technical communication.
   - Notes: Online/flexible UX candidate; lightweight intake only.
 
 #### University: Cornell University
@@ -296,7 +299,6 @@ This report summarizes only manually provided candidate intake data. It does not
 - **Program candidate `cand_prog_university_of_texas_austin_msis`**: Master of Science in Information Studies
   - Source URL: https://ischool.utexas.edu/programs/msis
   - Secondary relevant areas: core_hci;human_centered_ai
-  - Evidence snippet: UT Austin says the MSIS lets students explore areas including Human-Computer Interaction, User Experience Research & Design, Human-Centered AI and Data Science, and informatics.
   - Notes: Information Science/HCI/HCAI-adjacent candidate; review pathway depth later.
 
 #### University: University of Michigan
@@ -308,7 +310,11 @@ This report summarizes only manually provided candidate intake data. It does not
 - **Program candidate `cand_prog_university_of_michigan_msi_uxrd`**: Master of Science in Information — User Experience Research and Design pathway
   - Source URL: https://www.si.umich.edu/programs/master-science-information/curriculum/user-experience-research-and-design
   - Secondary relevant areas: core_hci
-  - Evidence snippet: Michigan says the UX Research and Design pathway prepares students to uncover user needs, document UX research results, prototype design solutions, and communicate with stakeholders.
+  - Evidence snippet: Direct pathway evidence: Michigan says UXRD prepares students to define valid problems, uncover user needs, document UX research results, prototype design solutions, and communicate with stakeholders; required pathway courses include interaction design, information architecture, and needs assessment/usability evaluation.
+  - Evidence snippet: Direct pathway evidence: Michigan lists Programming I as an MSI core course and UXRD method options including Intermediate Programming, Intro to Statistics, AR/VR Application Design, Building Interactive Applications, Gen AI and UX, Vibe Coding, IoT Interaction Design, and Database Application Design.
+  - Evidence snippet: Direct MSI evidence: the MSI is 48 credits, usually completed in two years or part time over three to four years; students complete core, pathway prerequisite, selective, elective, and SI 699 mastery coursework, and may receive up to nine credits for approved internships.
+  - Evidence snippet: Direct MSI/UXRD evidence: the required UX Research and Design mastery course asks students to complete a semester-long project applying research and design methods to understand user needs, envision solutions, produce prototypes, and evaluate user experience.
+  - Evidence snippet: Direct MSI-level evidence: Michigan says the MSI prepares information professionals to create data-driven solutions and purposeful technology and reports average salary, employment, and job satisfaction outcomes, with graduates entering technology, finance, cultural heritage, and nonprofit contexts.
   - Notes: Information Science/HCI-adjacent candidate; review pathway requirements later.
 
 ## Review status: promoted
