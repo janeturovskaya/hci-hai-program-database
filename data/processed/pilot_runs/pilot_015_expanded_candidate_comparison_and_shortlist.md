@@ -96,6 +96,7 @@ These programs provide useful landscape context or may fit specific constraints,
 - **California College of the Arts — MDes Interaction Design:** Strong studio, systems thinking, prototyping, human-centered technology, and Bay Area product context; limited evidence for AI, analytics, quantitative methods, or research structure.
 - **Savannah College of Art and Design — MFA UX Design:** Strong design-school UX curriculum, contextual research, cognitive human factors, usability evaluation, information architecture, front-end/prototyping/coding, electronics, thesis, SCADpro, and internship evidence; AI/HAI evidence remains limited.
 - **Kent State University — MS User Experience:** Strong online/flexible UX methods and career evidence, but current evidence does not establish AI/HAI, technical depth, or a required capstone/project.
+- **University of Maryland, Baltimore County — MS Human-Centered Computing:** Promising interdisciplinary HCC program with practitioner and research tracks for UX, information architecture, usability, mixed methods, and official AI-chatbot project context, but course/track details, technical depth, and master’s-level Human-AI evaluation access still need confirmation.
 
 ## 2. New-program impact
 
