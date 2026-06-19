@@ -207,6 +207,12 @@ This report summarizes only manually provided candidate intake data. It does not
   - Evidence snippet: Every MIMS student charts their own path. Whether you want to be an AI engineer, product designer, data scientist, or tech policy leader, you’ll tailor your coursework and projects to fit your ambitions.
   - Evidence snippet: Berkeley MIMS remains an information-school master’s program candidate; program-detail fields should be confirmed from official pages before promotion.
   - Evidence snippet: Berkeley I School HCI research-area page lists HCI faculty and topics including human-computer interaction, information visualization, and tangible user interfaces.
+  - Evidence snippet: Berkeley describes MIMS as a two-year STEM-designated full-time professional master’s program for aspiring technology leaders, AI engineers, UX designers, and data-driven decision-makers.
+  - Evidence snippet: Berkeley lists common MIMS areas of interest including UX research and design, human-computer interaction, data analytics, data science, natural language processing, artificial intelligence, and product management.
+  - Evidence snippet: Berkeley describes INFO 217A as a graduate-level introduction to HCI research in which students conduct original HCI research and collaborate on a semester-long research project, with themes including social computing and human-AI interaction.
+  - Evidence snippet: Berkeley says UX for AI examines how generative AI is reshaping product design and teaches students to evaluate AI tools, reason about UX for AI, and decide when tasks should remain human-led.
+  - Evidence snippet: Berkeley MIMS recent job titles include product manager, data scientist, machine learning engineer, UX researcher, interaction designer, product designer, UX designer, AI researcher, and research scientist.
+  - Evidence snippet: Berkeley’s HCI research-area page lists faculty and topics including human-computer interaction, information visualization, tangible user interfaces, social computing, and human-centered AI.
   - Notes: Good schema test for program plus school-level research areas. Keep as needs_review; later verify curriculum, faculty, and AI/HCI fit.
 
 #### University: University of California, Irvine
@@ -274,6 +280,11 @@ This report summarizes only manually provided candidate intake data. It does not
   - Evidence snippet: Four optional focus areas offer specialized training in user experience, data science, interactive technologies, and networks, crowds, and markets.
   - Evidence snippet: Cornell MPS page supports a tailored curriculum for real-world problems and careers; detailed duration/cost/deadline fields need separate confirmation before promotion.
   - Evidence snippet: Cornell describes HCI researchers as studying how humans interact with technology and using psychology, design, and computer science to create effective digital experiences.
+  - Evidence snippet: Cornell says the MPS curriculum combines essential foundations with advanced technical skills, culminates in a real-world project, and requires at least 30 credits for the 2-semester track or 39 credits for the 3-semester track.
+  - Evidence snippet: Cornell lists optional MPS focus areas in user experience, data science, interactive technologies, and networks, crowds, and markets.
+  - Evidence snippet: Cornell describes HCI researchers as studying how humans interact with technology and drawing on psychology, design, and computer science to create effective digital experiences.
+  - Evidence snippet: Cornell says Human-AI Interaction research studies how people interact with, understand, and collaborate with AI technologies.
+  - Evidence snippet: Cornell lists Qian Yang research areas including Human Centered Natural Language Processing and Human-AI interaction, with a Ph.D. in human-computer interaction.
   - Notes: Good test for non-dedicated-HCI but relevant InfoSci program. Keep as needs_review; later check Human-AI faculty and research access.
 
 #### University: The University of Texas at Austin
