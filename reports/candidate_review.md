@@ -160,6 +160,10 @@ This report summarizes only manually provided candidate intake data. It does not
   - Source URL: https://www.cca.edu/design/interaction-design/
   - Secondary relevant areas: mixed_methods_uxr
   - Evidence snippet: One-year interaction design program about relationships among people, products, and environments using human-centered technology
+  - Evidence snippet: Direct program evidence: CCA describes the MDes Interaction Design as a one-year, intensive STEM-designated program for designing relationships among people, products, and environments using craft-based design skills, systems thinking, and human-centered technology.
+  - Evidence snippet: Direct program evidence: CCA emphasizes systems thinking, iteration, collaboration, design leadership development, measurable social impact, prototyping, and building from concept to final product.
+  - Evidence snippet: Direct program/context evidence: CCA says graduates have found success in research-driven design practices in the Bay Area and beyond, and that the program prepares students for interaction-design work across industries.
+  - Evidence snippet: Direct program evidence: CCA places the program in San Francisco and Silicon Valley and describes interaction designers as using human-centered technology to address complex intersections among people, products, and environments.
   - Notes: Design-school interaction design candidate; later verify research/evaluation methods depth.
 
 #### University: DePaul University
@@ -235,6 +239,10 @@ This report summarizes only manually provided candidate intake data. It does not
   - Source URL: https://www.pace.edu/program/human-centered-design-ms
   - Secondary relevant areas: mixed_methods_uxr
   - Evidence snippet: Human-centered design MS with UX, HCI, research methods, usability metrics, prototyping, and evaluation relevance
+  - Evidence snippet: Direct catalog evidence: Pace requires Introduction to UX Design, Introduction to HCI, Research Methods for User Experience, Human Factors and Usability Metrics, Prototyping and User Experience, and a UX capstone or product development project.
+  - Evidence snippet: Direct catalog evidence: Pace lists development concentration electives such as mobile application development, mobile web content and development, introduction to coding, and information systems design and development.
+  - Evidence snippet: Direct catalog evidence: the 30-credit HCD MS includes either HCD 691 User Experience Capstone Project or CS 665 Product Development Project, and students may take both with one counted as an elective.
+  - Evidence snippet: Direct program evidence: Pace frames human-centered design at the intersection of computer science, information systems, cognitive science, and interaction design and says graduates gain skills to become HCI practitioners, researchers, and leaders.
   - Notes: Program belongs through explicit UX/HCI curriculum and design/evaluation tracks; later review technical depth.
 
 #### University: Rochester Institute of Technology
@@ -418,6 +426,11 @@ This report summarizes only manually provided candidate intake data. It does not
   - Source URL: https://www.bentley.edu/academics/graduate-programs/masters-human-factors
   - Secondary relevant areas: core_hci
   - Evidence snippet: Human Factors in Information Design program with UX research/design, customer experience, and product-management relevance
+  - Evidence snippet: Direct program evidence: Bentley describes HFID as operating at the intersection of UX, behavioral science, technology, design, and business to prepare students to understand human behavior and design measurable experiences.
+  - Evidence snippet: Direct program/context evidence: Bentley highlights AI, ethics, and emerging technology on the HFID page and profiles faculty research at the intersection of AI and HCI, including AI-driven interfaces and extended reality.
+  - Evidence snippet: Direct program evidence: Bentley says organizations can engage HFID students through capstone collaborations, experience design research, design challenges, and other class projects.
+  - Evidence snippet: Direct catalog evidence: Bentley describes HFID as an accelerator for careers in UX research and design, customer experience, and product management.
+  - Evidence snippet: Course-level evidence: Bentley HF course descriptions include applied theory for information products and user-interface design, supporting human-factors and UX methods development.
   - Notes: Program belongs as a human factors information-design route; later verify modality and AI/product-evaluation coursework.
 
 #### University: Brandeis University
@@ -431,6 +444,10 @@ This report summarizes only manually provided candidate intake data. It does not
   - Source URL: https://www.brandeis.edu/online/academics/masters-degrees/user-centered-design/index.html
   - Secondary relevant areas: core_hci
   - Evidence snippet: Online user-centered design MS exploring how people think, behave, and interact with technology with research and usability emphasis
+  - Evidence snippet: Direct program evidence: Brandeis says the online MS explores how people think, behave, and interact with technology, grounding digital-experience design in research, usability, and inclusivity.
+  - Evidence snippet: Direct program evidence: Brandeis lists electives including AI for Human-Centered Design, Technology Futures, Information Visualization, Survey Methods, Web Development Technologies, and Statistics and Data Analysis.
+  - Evidence snippet: Direct program evidence: Brandeis requires a capstone in which students work independently or in small teams to produce a prototype of a product or system, and notes an optional internship course.
+  - Evidence snippet: Direct program evidence: the MS is 100% online, 30 credits, part- or full-time, finishable in 1-2 years, STEM-designated, and lists roles such as UX designer, UX researcher, information architect, UI designer, and web developer.
   - Notes: Online UX/design-research candidate; later verify course sequence and applied project expectations.
 
 #### University: Cornell University
@@ -483,6 +500,10 @@ This report summarizes only manually provided candidate intake data. It does not
   - Source URL: https://www.scad.edu/academics/programs/user-experience-design/degrees/mfa
   - Secondary relevant areas: core_hci
   - Evidence snippet: Graduate UX design program connected to UX design, programming, technology, aesthetics, and human behavior
+  - Evidence snippet: Direct curriculum evidence: SCAD lists required MFA coursework including Theory of UX Design, Methods of Contextual Research, Cognitive Human Factors for Designers, Usability Testing and Evaluation, and Information Architecture for Designers.
+  - Evidence snippet: Direct curriculum evidence: SCAD lists Front-end Design for User Experience, Prototyping Coding: Proof of Concept, Modeling Electronics for Designers, service visualization, and graduate electives within the MFA course of study.
+  - Evidence snippet: Direct curriculum evidence: SCAD requires UX Design MFA Thesis I: Research, Synthesis, and Insight and UX Design MFA Thesis II: Design, Validation, and Execution, with options including user-centered research for business, SCADpro collaboration, or graduate internship.
+  - Evidence snippet: Direct program evidence: SCAD lists the MFA in UX design at Savannah with a 90-hour total course of study, with additional assigned intensive courses possible at admission.
   - Notes: MFA UX option adds studio/design-school variety; later verify evidence for research methods and technology depth.
 
 #### University: The University of Texas at Austin
@@ -529,6 +550,11 @@ This report summarizes only manually provided candidate intake data. It does not
   - Source URL: https://www.colorado.edu/atlas/academics/grad
   - Secondary relevant areas: core_hci
   - Evidence snippet: Creative technology and design MS with real-world design challenges, technical know-how, and social-impact track relevance
+  - Evidence snippet: Direct program evidence: CU Boulder describes Creative Technology & Design as blending engineering, computer science, creative problem solving, and design through project-based curricula focused on physical and digital solutions to real-world design challenges.
+  - Evidence snippet: Course-level evidence: ATLS 5430 Design Methods covers deliberate observation such as cultural probes and ethnography, problem finding, design thinking, wicked problems, iterative design, alternative generation, and assessment.
+  - Evidence snippet: Direct program FAQ evidence: ATLAS says MS students can engage faculty by taking classes, working on independent projects, or joining ATLAS research labs and creative spaces.
+  - Evidence snippet: School/department context: an ATLAS news page describes generative AI and augmented reality research and identifies a CTD MS alumna working on an automated AR system with dynamic visual guidance.
+  - Evidence snippet: Direct track evidence: the 33-credit professional CTD MS Creative Industries track prepares students for technology and design roles, with many students working part-time and course schedules offering flexibility.
   - Notes: Adds creative-technology/prototyping variety rather than a traditional HCI degree; later verify HCI/UX methods coverage.
 
 ## Review status: promoted
