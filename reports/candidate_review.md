@@ -132,6 +132,19 @@ This report summarizes only manually provided candidate intake data. It does not
 
 ### Relevant area: computational_social_science
 
+#### University: Penn State University
+
+- **University candidate `cand_univ_penn_state`**: Penn State University
+  - Source URL: https://ist.psu.edu/degree-programs/graduate/m-s-informatics
+  - Secondary relevant areas: core_hci;human_centered_ai
+  - Notes: Broad informatics/research-access candidate; later verify direct HAI evaluation methods and advisor availability.
+- **Program candidate `cand_prog_penn_state_ms`**: MS Informatics
+  - Source URL: https://ist.psu.edu/degree-programs/graduate/m-s-informatics
+  - Secondary relevant areas: core_hci;human_centered_ai
+  - Evidence snippet: MS Informatics builds understanding of how information and technology impact and are impacted by people, organizations, and the world community.
+  - Evidence snippet: Bulletin describes an interdisciplinary MS focused on theoretical, application-oriented, and educational issues facing a digital, global economy.
+  - Notes: Broad informatics/research-access candidate; later verify direct HAI evaluation methods and advisor availability.
+
 #### University: University of Chicago
 
 - **University candidate `cand_univ_university_of_chicago`**: University of Chicago
@@ -166,6 +179,19 @@ This report summarizes only manually provided candidate intake data. It does not
   - Evidence snippet: Direct program evidence: CCA places the program in San Francisco and Silicon Valley and describes interaction designers as using human-centered technology to address complex intersections among people, products, and environments.
   - Notes: Design-school interaction design candidate; later verify research/evaluation methods depth.
 
+#### University: Clark University
+
+- **University candidate `cand_univ_clark`**: Clark University
+  - Source URL: https://www.clarku.edu/programs/masters/computer-science-ms/
+  - Secondary relevant areas: human_centered_ai;human_ai_interaction
+  - Notes: Unusual paired HCI and AI concentration option; later verify graduate research depth and evaluation methods.
+- **Program candidate `cand_prog_clark_ms`**: MS Computer Science with HCI / Intelligent Systems and AI concentrations
+  - Source URL: https://www.clarku.edu/programs/masters/computer-science-ms/
+  - Secondary relevant areas: human_centered_ai;human_ai_interaction
+  - Evidence snippet: MSCS page describes HCI and Intelligent Systems and AI Solutions Design concentrations.
+  - Evidence snippet: Catalog lists concentrations in Intelligent Systems and AI Solutions Design, Data Intelligence, Human-Computer Interaction, and Software Engineering.
+  - Notes: Unusual paired HCI and AI concentration option; later verify graduate research depth and evaluation methods.
+
 #### University: DePaul University
 
 - **University candidate `cand_univ_depaul_university`**: DePaul University
@@ -195,6 +221,19 @@ This report summarizes only manually provided candidate intake data. It does not
   - Evidence snippet: Direct program evidence: Drexel says coursework emphasizes hands-on projects and teamwork, the program culminates in a collaborative capstone project, and graduate co-op is available for on-campus full-time students.
   - Evidence snippet: Direct program evidence: Drexel says graduates leave with a portfolio and lists employers including The Philadelphia Inquirer, Chatham Financial, Lowe’s, Pluto TV, Accenture, Morgan Stanley, UPMC, and Shopify.
   - Notes: Dedicated HCI/UX candidate; lightweight intake only.
+
+#### University: Grand Valley State University
+
+- **University candidate `cand_univ_gvsu`**: Grand Valley State University
+  - Source URL: https://www.gvsu.edu/academics/human-centered-computing-ms.htm
+  - Secondary relevant areas: mixed_methods_uxr;human_centered_ai
+  - Notes: Newer HCC program; later verify maturity, research access, and HAI evaluation depth.
+- **Program candidate `cand_prog_gvsu_ms`**: MS Human-Centered Computing
+  - Source URL: https://www.gvsu.edu/academics/human-centered-computing-ms.htm
+  - Secondary relevant areas: mixed_methods_uxr;human_centered_ai
+  - Evidence snippet: MS HCC combines design thinking, UX, and software development; students learn usability evaluation and prototyping while exploring AI and AR/VR.
+  - Evidence snippet: Catalog says students acquire expertise in understanding user needs, designing UX/interfaces, conducting mixed methods user research, and developing technologies.
+  - Notes: Newer HCC program; later verify maturity, research access, and HAI evaluation depth.
 
 #### University: Indiana University
 
@@ -227,6 +266,19 @@ This report summarizes only manually provided candidate intake data. It does not
   - Evidence snippet: HCI course descriptions include evaluation studies, usability sessions, data analysis and reporting, automated systems, emerging HCI research or industry practice, creative component, and internship courses.
   - Evidence snippet: The MS page says the program prepares students for HCI careers and further doctoral work through an interdisciplinary curriculum.
   - Notes: Dedicated HCI MS candidate; later compare thesis/creative-component options and online MHCI distinction.
+
+#### University: Michigan Technological University
+
+- **University candidate `cand_univ_michigan_tech`**: Michigan Technological University
+  - Source URL: https://www.mtu.edu/psychology/graduate/applied/
+  - Secondary relevant areas: mixed_methods_uxr;human_ai_interaction
+  - Notes: Human factors/research-methods route; later verify AI-specific HAI opportunities and master’s lab fit.
+- **Program candidate `cand_prog_michigan_tech_ms`**: MS Applied Cognitive Science and Human Factors
+  - Source URL: https://www.mtu.edu/psychology/graduate/applied/
+  - Secondary relevant areas: mixed_methods_uxr;human_ai_interaction
+  - Evidence snippet: The research-intensive program optimizes performance, health, and safety at the interface of humans and technology.
+  - Evidence snippet: Curriculum develops scholars and practitioners who improve human-machine systems through instruction and technological design.
+  - Notes: Human factors/research-methods route; later verify AI-specific HAI opportunities and master’s lab fit.
 
 #### University: Pace University
 
@@ -381,6 +433,34 @@ This report summarizes only manually provided candidate intake data. It does not
   - Evidence snippet: The SILS faculty directory lists expertise in HCI, information seeking, research methods, visualization, data science, machine learning, databases, information visualization, and augmented/virtual reality.
   - Notes: Information-science candidate with official HCI research-area context; later verify student-accessible HCI/UX pathways.
 
+### Relevant area: human_ai_interaction
+
+#### University: Emory University
+
+- **University candidate `cand_univ_emory`**: Emory University
+  - Source URL: https://computerscience.emory.edu/graduate-ms/cs-ms-programs.html
+  - Secondary relevant areas: core_hci;human_centered_ai
+  - Notes: CS+HCI+AI research signal; later verify master’s research participation and fit outside PhD-oriented work.
+- **Program candidate `cand_prog_emory_ms`**: MS Computer Science
+  - Source URL: https://computerscience.emory.edu/graduate-ms/cs-ms-programs.html
+  - Secondary relevant areas: core_hci;human_centered_ai
+  - Evidence snippet: MS Computer Science allows focus on data mining and machine learning, NLP and intelligent systems, visualization and HCI, among other areas.
+  - Evidence snippet: HCI strengths include dialog and recommender systems, information visualization and bias, AI/computing ethics, future of work, and Human AI Interaction.
+  - Notes: CS+HCI+AI research signal; later verify master’s research participation and fit outside PhD-oriented work.
+
+#### University: George Mason University
+
+- **University candidate `cand_univ_gmu`**: George Mason University
+  - Source URL: https://catalog.gmu.edu/colleges-schools/engineering-computing/school-computing/information-sciences-technology/applied-information-technology-ms/
+  - Secondary relevant areas: human_centered_ai;core_hci
+  - Notes: Course-level HAI signal; later verify pathway advising and whether HAI is a coherent MS route.
+- **Program candidate `cand_prog_gmu_ms`**: MS Applied Information Technology with Human-AI Interaction pathway
+  - Source URL: https://catalog.gmu.edu/colleges-schools/engineering-computing/school-computing/information-sciences-technology/applied-information-technology-ms/
+  - Secondary relevant areas: human_centered_ai;core_hci
+  - Evidence snippet: Catalog lists Applied Artificial Intelligence Technologies coursework including Human-AI Interaction, Interactive Machine Learning and Artificial Intelligence, and Interaction Design and Accessibility.
+  - Evidence snippet: AIT 618 is Human-AI Interaction and is recommended for students admitted to the MS-AIT degree program or by permission.
+  - Notes: Course-level HAI signal; later verify pathway advising and whether HAI is a coherent MS route.
+
 ### Relevant area: human_centered_ai
 
 #### University: Northwestern University
@@ -397,6 +477,45 @@ This report summarizes only manually provided candidate intake data. It does not
   - Evidence snippet: Direct course evidence: Northwestern describes HCI as an interdisciplinary field studying how people and computers interact from individual usability to broader social and cultural phenomena.
   - Evidence snippet: Direct program context: Northwestern says graduates are prepared to identify opportunities and lead teams in designing and developing sophisticated AI technologies and products.
   - Notes: Human-AI adjacent candidate; review HCI/UX fit carefully later.
+
+#### University: Stevens Institute of Technology
+
+- **University candidate `cand_univ_stevens`**: Stevens Institute of Technology
+  - Source URL: https://www.stevens.edu/news/ai-education-with-a-focus-on-people
+  - Secondary relevant areas: human_ai_interaction;core_hci
+  - Notes: New Fall 2026 program; later verify catalog details, project structure, and lab access.
+- **Program candidate `cand_prog_stevens_ms_hcai`**: MS Human-Centered AI
+  - Source URL: https://www.stevens.edu/news/ai-education-with-a-focus-on-people
+  - Secondary relevant areas: human_ai_interaction;core_hci
+  - Evidence snippet: Official news describes a Fall 2026 human-centered AI master’s blending AI/ML foundations with interdisciplinary expertise for useful, accessible, responsible systems.
+  - Evidence snippet: Graduate program list includes Human-Centered AI, M.S. under Computer Science.
+  - Notes: New Fall 2026 program; later verify catalog details, project structure, and lab access.
+
+#### University: Syracuse University
+
+- **University candidate `cand_univ_syracuse`**: Syracuse University
+  - Source URL: https://ischool.syracuse.edu/academics/applied-human-centered-artificial-intelligence-masters-degree/
+  - Secondary relevant areas: core_hci
+  - Notes: Direct HCAI degree identity; later verify depth of human-subject evaluation and research access.
+- **Program candidate `cand_prog_syracuse_ms_hcai`**: MS Applied Human-Centered Artificial Intelligence
+  - Source URL: https://ischool.syracuse.edu/academics/applied-human-centered-artificial-intelligence-masters-degree/
+  - Secondary relevant areas: core_hci
+  - Evidence snippet: The Applied Human Centered AI master’s empowers students to master AI technologies while staying true to ethical and human-centered principles.
+  - Evidence snippet: Official news says the degree prepares students to leverage generative AI models ethically and with a human-centered approach.
+  - Notes: Direct HCAI degree identity; later verify depth of human-subject evaluation and research access.
+
+#### University: UNC Charlotte
+
+- **University candidate `cand_univ_unc_charlotte`**: UNC Charlotte
+  - Source URL: https://academics.charlotte.edu/program/artificial-intelligence-m-s-on-campus/
+  - Secondary relevant areas: human_ai_interaction
+  - Notes: Dedicated AI program with ethics signal; later verify HAI/HCI evaluation and master’s lab access.
+- **Program candidate `cand_prog_unc_charlotte_ms`**: MS Artificial Intelligence
+  - Source URL: https://academics.charlotte.edu/program/artificial-intelligence-m-s-on-campus/
+  - Secondary relevant areas: human_ai_interaction
+  - Evidence snippet: MS Artificial Intelligence provides advanced skills for AI systems and includes ethical considerations plus communication and teamwork abilities.
+  - Evidence snippet: Official news says the MS AI launches in August 2026 and is supported by foundational AI research and the Charlotte AI Institute.
+  - Notes: Dedicated AI program with ethics signal; later verify HAI/HCI evaluation and master’s lab access.
 
 ### Relevant area: mixed_methods_uxr
 
@@ -520,6 +639,19 @@ This report summarizes only manually provided candidate intake data. It does not
   - Evidence snippet: Direct course evidence: UT Austin describes a UX course covering user research, concept generation, design methods, user evaluation, teamwork, design rationale, and presentation.
   - Evidence snippet: Direct course-list evidence: UT Austin MSIS/PhD offerings include prompt engineering, machine learning, data wrangling, accessible UX, user behavior/search experience, and Human-AI Interaction.
   - Notes: Information Science/HCI/HCAI-adjacent candidate; review pathway depth later.
+
+#### University: University of Illinois Urbana-Champaign
+
+- **University candidate `cand_univ_uiuc`**: University of Illinois Urbana-Champaign
+  - Source URL: https://ischool.illinois.edu/academics/graduate/ms-information-management
+  - Secondary relevant areas: computational_social_science;core_hci
+  - Notes: Strong iSchool data/HCD route; later verify HAI-specific electives and lab access.
+- **Program candidate `cand_prog_uiuc_ms`**: MS Information Management
+  - Source URL: https://ischool.illinois.edu/academics/graduate/ms-information-management
+  - Secondary relevant areas: computational_social_science;core_hci
+  - Evidence snippet: MSIM combines advanced technical skills with understanding of organizational and social challenges to develop impactful information solutions.
+  - Evidence snippet: Catalog outcomes include human-centered design and systems, data analytics, and addressing research questions or real-world problems with appropriate methods.
+  - Notes: Strong iSchool data/HCD route; later verify HAI-specific electives and lab access.
 
 #### University: University of Michigan
 
