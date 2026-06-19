@@ -149,6 +149,19 @@ This report summarizes only manually provided candidate intake data. It does not
 
 ### Relevant area: core_hci
 
+#### University: California College of the Arts
+
+- **University candidate `cand_univ_cca`**: California College of the Arts
+  - Source URL: https://www.cca.edu/design/interaction-design/
+  - Secondary relevant areas: mixed_methods_uxr
+  - Evidence snippet: MDes in Interaction Design focused on relationships among people, products, and environments
+  - Notes: Lightweight addition; design-school interaction design route in San Francisco/Silicon Valley context.
+- **Program candidate `cand_prog_cca_ixd_mdes`**: MDes in Interaction Design
+  - Source URL: https://www.cca.edu/design/interaction-design/
+  - Secondary relevant areas: mixed_methods_uxr
+  - Evidence snippet: One-year interaction design program about relationships among people, products, and environments using human-centered technology
+  - Notes: Design-school interaction design candidate; later verify research/evaluation methods depth.
+
 #### University: DePaul University
 
 - **University candidate `cand_univ_depaul_university`**: DePaul University
@@ -194,6 +207,36 @@ This report summarizes only manually provided candidate intake data. It does not
   - Evidence snippet: Direct program evidence: Indiana reports HCID alumni roles such as UX Designer, UX Researcher, Product Manager, UX Engineer, Product Designer, User Experience Designer, Design Researcher, and Product Strategist, with example employers including Google, Deloitte, SeatGeek, and ServiceNow.
   - Notes: Dedicated HCI/design candidate; lightweight intake only.
 
+#### University: Iowa State University
+
+- **University candidate `cand_univ_iowa_state`**: Iowa State University
+  - Source URL: https://www.vrac.iastate.edu/hci/degree-programs/masters/
+  - Secondary relevant areas: mixed_methods_uxr
+  - Evidence snippet: Interdepartmental graduate major in Human Computer Interaction with MS and online MHCI options
+  - Notes: Lightweight addition; Midwest interdepartmental HCI program with both MS and distance professional option.
+- **Program candidate `cand_prog_iowa_state_hci_ms`**: Master of Science in Human Computer Interaction
+  - Source URL: https://www.vrac.iastate.edu/hci/degree-programs/masters/
+  - Secondary relevant areas: mixed_methods_uxr
+  - Evidence snippet: Interdisciplinary MS in HCI preparing students for HCI careers and continued doctoral study
+  - Evidence snippet: Iowa State offers an MS in HCI with thesis and creative-component capstone options; the capstone option is 27 coursework credits plus a 3-credit capstone project.
+  - Evidence snippet: The catalog describes HCI as an interdepartmental graduate program focused on social and cognitive aspects of computational-device design and use, including usability evaluation and programming topics such as computational perception and language parsing.
+  - Evidence snippet: HCI course descriptions include evaluation studies, usability sessions, data analysis and reporting, automated systems, emerging HCI research or industry practice, creative component, and internship courses.
+  - Evidence snippet: The MS page says the program prepares students for HCI careers and further doctoral work through an interdisciplinary curriculum.
+  - Notes: Dedicated HCI MS candidate; later compare thesis/creative-component options and online MHCI distinction.
+
+#### University: Pace University
+
+- **University candidate `cand_univ_pace`**: Pace University
+  - Source URL: https://www.pace.edu/program/human-centered-design-ms
+  - Secondary relevant areas: mixed_methods_uxr
+  - Evidence snippet: MS in Human Centered Design with UX, HCI, research methods, and evaluation coursework
+  - Notes: Lightweight addition; urban applied HCD program with design/evaluation and development track options.
+- **Program candidate `cand_prog_pace_hcd_ms`**: Human Centered Design, MS
+  - Source URL: https://www.pace.edu/program/human-centered-design-ms
+  - Secondary relevant areas: mixed_methods_uxr
+  - Evidence snippet: Human-centered design MS with UX, HCI, research methods, usability metrics, prototyping, and evaluation relevance
+  - Notes: Program belongs through explicit UX/HCI curriculum and design/evaluation tracks; later review technical depth.
+
 #### University: Rochester Institute of Technology
 
 - **University candidate `cand_univ_rochester_institute_of_technology`**: Rochester Institute of Technology
@@ -208,6 +251,23 @@ This report summarizes only manually provided candidate intake data. It does not
   - Evidence snippet: Direct program handbook evidence: RIT describes capstone proposal and capstone project sequencing for the MS HCI, with some students conducting project work after the proposal course.
   - Evidence snippet: Indirect historical program context: RIT reported the master’s requires a capstone project in which research would be conducted in institute labs, including a Usability Testing Laboratory.
   - Notes: Dedicated HCI candidate; lightweight intake only.
+
+#### University: Tufts University
+
+- **University candidate `cand_univ_tufts`**: Tufts University
+  - Source URL: https://engineering.tufts.edu/me/current-students/masters/master-science-human-factors-engineering
+  - Secondary relevant areas: mixed_methods_uxr
+  - Evidence snippet: MS in Human Factors Engineering focused on interactions with technical systems
+  - Notes: Lightweight addition; engineering human-factors pathway distinct from dedicated HCI and iSchool programs.
+- **Program candidate `cand_prog_tufts_hfe_ms`**: Master of Science in Human Factors Engineering
+  - Source URL: https://engineering.tufts.edu/me/current-students/masters/master-science-human-factors-engineering
+  - Secondary relevant areas: mixed_methods_uxr
+  - Evidence snippet: Human factors engineering MS for problems arising when people interact with the technical world
+  - Evidence snippet: Tufts lists a 30-credit HFE MS curriculum with human factors core, design core, probability/statistics, analytical methods, electives, and a project or thesis requirement.
+  - Evidence snippet: Required and optional curriculum areas include Applied Behavioral Statistics for Engineering, Analytical Methods in Human Factors Engineering, and Advanced Research Methods in Human Factors Engineering.
+  - Evidence snippet: The prospective-student page frames HFE around problems that arise when people interact with the technical world and names areas including product design, computer-interface design, ergonomics, workplace safety, and medical devices and systems design.
+  - Evidence snippet: The Tufts Human Factors program site says the program provides experience in the user-centered design process and offers elective options including HCI, medical technology, consumer psychology, and assistive technology.
+  - Notes: Engineering-oriented human factors candidate; later verify how much coursework is software/HCI versus broader systems/ergonomics.
 
 #### University: University of California, Berkeley
 
@@ -247,6 +307,23 @@ This report summarizes only manually provided candidate intake data. It does not
   - Evidence snippet: Direct program evidence: UCI says MHCID teams work with interdisciplinary faculty and an industry client to innovate, improve, or modify a digital product or service.
   - Notes: Dedicated/professional HCI design candidate; lightweight intake only.
 
+#### University: University of California, Santa Cruz
+
+- **University candidate `cand_univ_uc_santa_cruz`**: University of California, Santa Cruz
+  - Source URL: https://hci.ucsc.edu/
+  - Secondary relevant areas: mixed_methods_uxr
+  - Evidence snippet: MS in Human Computer Interaction at Silicon Valley Campus
+  - Notes: Lightweight addition; newer four-quarter HCI MS connected to computational media and Silicon Valley campus.
+- **Program candidate `cand_prog_ucsc_hci_ms`**: Human Computer Interaction M.S.
+  - Source URL: https://hci.ucsc.edu/
+  - Secondary relevant areas: mixed_methods_uxr
+  - Evidence snippet: Four-quarter HCI MS for students pursuing UX careers including product design and UX research
+  - Evidence snippet: The UCSC HCI MS is a four-quarter, 15-month program where students learn and apply user research, HCI methodologies, prototyping and technical build skills, inclusive design, teamwork, and stakeholder communication.
+  - Evidence snippet: The program guides students interested in UX careers such as product design and UX research.
+  - Evidence snippet: The annual industry-sponsored capstone places teams of three or four with corporate or community partners on partner-defined UX product, service, experience-design, or research challenges.
+  - Evidence snippet: The program explicitly includes prototyping and technical build skills alongside design methodologies, user research, inclusive design, and stakeholder communication.
+  - Notes: Dedicated newer HCI MS candidate; later verify curriculum maturity and research/project structure.
+
 #### University: University of Maryland
 
 - **University candidate `cand_univ_university_of_maryland`**: University of Maryland
@@ -261,6 +338,40 @@ This report summarizes only manually provided candidate intake data. It does not
   - Evidence snippet: Direct program evidence: all HCIM students complete either a two-semester capstone with clients, user research, and prototypes for real-world contexts or a two-semester thesis culminating in a defended 70- to 100-page research thesis supervised by faculty.
   - Evidence snippet: Direct program evidence: UMD reports hands-on learning with partner organizations and industry professionals, access to Washington D.C. internship and job opportunities, and 94% employed within one year.
   - Notes: Dedicated HCIM candidate; lightweight intake only.
+
+#### University: University of Maryland, Baltimore County
+
+- **University candidate `cand_univ_umbc`**: University of Maryland, Baltimore County
+  - Source URL: https://hcc.umbc.edu/ms/
+  - Secondary relevant areas: mixed_methods_uxr
+  - Evidence snippet: Human-Centered Computing graduate program with practitioner and research tracks
+  - Notes: Lightweight addition; HCC program adds a human-centered computing pathway beyond existing Maryland-system HCI candidate.
+- **Program candidate `cand_prog_umbc_hcc_ms`**: Master of Science in Human-Centered Computing
+  - Source URL: https://hcc.umbc.edu/ms/
+  - Secondary relevant areas: mixed_methods_uxr
+  - Evidence snippet: Interdisciplinary HCC MS with practitioner and research tracks for UX, information architecture, and usability professionals
+  - Evidence snippet: The HCC MS is an interdisciplinary program for HCC practitioners and researchers, including future UX designers, user researchers, information architects, and usability analysts; it offers practitioner and research tracks.
+  - Evidence snippet: Department HCC research addresses design, implementation, and evaluation of usable interactive systems using quantitative and qualitative methods, lab and field data collection, user-centered design, and participatory design.
+  - Evidence snippet: The ISRC academics page describes the HCC master’s as research-based but application-oriented, targeted to UX practitioners and researchers, consisting of ten courses with an MS thesis option.
+  - Evidence snippet: An official department story describes an AI chatbot project involving HCC master’s students and notes career aims spanning UI/UX, product design, software engineering, and AI-focused application development.
+  - Notes: Program belongs because official HCC MS page describes interdisciplinary preparation for HCC practitioners and researchers; later verify track requirements.
+
+#### University: University of North Carolina at Chapel Hill
+
+- **University candidate `cand_univ_unc_chapel_hill`**: University of North Carolina at Chapel Hill
+  - Source URL: https://sils.unc.edu/master-of-science-in-information-science-msis/
+  - Secondary relevant areas: mixed_methods_uxr
+  - Evidence snippet: MSIS program prepares students for design, implementation, and evaluation of information systems
+  - Notes: Lightweight addition; information-science pathway with HCI context from official research-area page.
+- **Program candidate `cand_prog_unc_msis`**: M.S. in Information Science
+  - Source URL: https://sils.unc.edu/master-of-science-in-information-science-msis/
+  - Secondary relevant areas: mixed_methods_uxr
+  - Evidence snippet: Information Science MS preparing students for design, implementation, evaluation, and administration of information systems
+  - Evidence snippet: UNC SILS says the on-campus MSIS prepares students to lead design, implementation, evaluation, and administration of information systems, with emphasis on analyzing, organizing, representing, and retrieving information.
+  - Evidence snippet: The MSIS requires 48 graduate credit hours, a comprehensive examination, and completion of a master’s paper or practicum project.
+  - Evidence snippet: SILS lists labs including VACLab, which works at the intersection of interactive visualization, HCI, and machine learning to support information analysis and communication.
+  - Evidence snippet: The SILS faculty directory lists expertise in HCI, information seeking, research methods, visualization, data science, machine learning, databases, information visualization, and augmented/virtual reality.
+  - Notes: Information-science candidate with official HCI research-area context; later verify student-accessible HCI/UX pathways.
 
 ### Relevant area: human_centered_ai
 
@@ -296,6 +407,32 @@ This report summarizes only manually provided candidate intake data. It does not
   - Evidence snippet: Direct program evidence: ASU says graduates are prepared for roles in UX, design research, HCI, interface design, interaction design, digital visualization design, and usability testing.
   - Notes: Online/flexible UX candidate; lightweight intake only.
 
+#### University: Bentley University
+
+- **University candidate `cand_univ_bentley`**: Bentley University
+  - Source URL: https://www.bentley.edu/academics/graduate-programs/masters-human-factors
+  - Secondary relevant areas: core_hci
+  - Evidence snippet: MS in Human Factors in Information Design for UX research and design
+  - Notes: Lightweight addition; business-school human factors/UX program with information design framing.
+- **Program candidate `cand_prog_bentley_hfid_ms`**: Master of Science in Human Factors in Information Design
+  - Source URL: https://www.bentley.edu/academics/graduate-programs/masters-human-factors
+  - Secondary relevant areas: core_hci
+  - Evidence snippet: Human Factors in Information Design program with UX research/design, customer experience, and product-management relevance
+  - Notes: Program belongs as a human factors information-design route; later verify modality and AI/product-evaluation coursework.
+
+#### University: Brandeis University
+
+- **University candidate `cand_univ_brandeis`**: Brandeis University
+  - Source URL: https://www.brandeis.edu/online/academics/masters-degrees/user-centered-design/index.html
+  - Secondary relevant areas: core_hci
+  - Evidence snippet: Online MS in User-Centered Design with UX research, usability, and inclusivity emphasis
+  - Notes: Lightweight addition; online user-centered design option for working professionals.
+- **Program candidate `cand_prog_brandeis_ucd_ms`**: Master of Science in User-Centered Design
+  - Source URL: https://www.brandeis.edu/online/academics/masters-degrees/user-centered-design/index.html
+  - Secondary relevant areas: core_hci
+  - Evidence snippet: Online user-centered design MS exploring how people think, behave, and interact with technology with research and usability emphasis
+  - Notes: Online UX/design-research candidate; later verify course sequence and applied project expectations.
+
 #### University: Cornell University
 
 - **University candidate `cand_univ_cornell`**: Cornell University
@@ -317,6 +454,36 @@ This report summarizes only manually provided candidate intake data. It does not
   - Evidence snippet: Direct program evidence: Cornell frames the MPS as professional preparation for solving real-world problems and lists career-relevant focus areas including user experience, data science, interactive technologies, and networks/crowds/markets.
   - Evidence snippet: Direct program evidence: Cornell says the MPS combines foundations with advanced technical skills and culminates in a real-world project, with 30-credit two-semester or 39-credit three-semester options.
   - Notes: Good test for non-dedicated-HCI but relevant InfoSci program. Keep as needs_review; later check Human-AI faculty and research access.
+
+#### University: Kent State University
+
+- **University candidate `cand_univ_kent_state`**: Kent State University
+  - Source URL: https://www.kent.edu/ischool/user-experience-design
+  - Secondary relevant areas: core_hci
+  - Evidence snippet: School of Information MS in User Experience offered online
+  - Notes: Lightweight addition; online iSchool UX pathway centered on user research, usability, IA, and content strategy.
+- **Program candidate `cand_prog_kent_state_ms_ux`**: Master of Science in User Experience
+  - Source URL: https://www.kent.edu/ischool/user-experience-design
+  - Secondary relevant areas: core_hci
+  - Evidence snippet: Online UX MS covering discovery research, information architecture, interaction design, prototyping, usability testing, and UX strategy
+  - Evidence snippet: Kent State says the MS in User Experience prepares students for careers in discovery research, information architecture, interaction design, prototyping, usability testing, and UX strategy and assessment.
+  - Evidence snippet: The iSchool page describes the UXD MS as a 36-credit online program immersing students in information architecture, usability, content strategy, organization of information, and user research.
+  - Evidence snippet: The program description emphasizes discovery research, prototyping, usability testing, and UX strategy/assessment as preparation for multidisciplinary design-team work.
+  - Evidence snippet: An official alumni profile identifies a Kent UX graduate working as a UX researcher at Sony PlayStation, conducting user research studies across console, mobile app, and website experiences.
+  - Notes: Program belongs as an online iSchool UX candidate with explicit user research and usability evidence.
+
+#### University: Savannah College of Art and Design
+
+- **University candidate `cand_univ_scad`**: Savannah College of Art and Design
+  - Source URL: https://www.scad.edu/academics/programs/user-experience-design/degrees/mfa
+  - Secondary relevant areas: core_hci
+  - Evidence snippet: MFA in UX Design and UX design program integrating technology, aesthetics, and human behavior
+  - Notes: Lightweight addition; design-school MFA UX path distinct from MS HCI programs.
+- **Program candidate `cand_prog_scad_ux_mfa`**: MFA in UX Design
+  - Source URL: https://www.scad.edu/academics/programs/user-experience-design/degrees/mfa
+  - Secondary relevant areas: core_hci
+  - Evidence snippet: Graduate UX design program connected to UX design, programming, technology, aesthetics, and human behavior
+  - Notes: MFA UX option adds studio/design-school variety; later verify evidence for research methods and technology depth.
 
 #### University: The University of Texas at Austin
 
@@ -348,6 +515,21 @@ This report summarizes only manually provided candidate intake data. It does not
   - Evidence snippet: Direct MSI/UXRD evidence: the required UX Research and Design mastery course asks students to complete a semester-long project applying research and design methods to understand user needs, envision solutions, produce prototypes, and evaluate user experience.
   - Evidence snippet: Direct MSI-level evidence: Michigan says the MSI prepares information professionals to create data-driven solutions and purposeful technology and reports average salary, employment, and job satisfaction outcomes, with graduates entering technology, finance, cultural heritage, and nonprofit contexts.
   - Notes: Information Science/HCI-adjacent candidate; review pathway requirements later.
+
+### Relevant area: other
+
+#### University: University of Colorado Boulder
+
+- **University candidate `cand_univ_cu_boulder`**: University of Colorado Boulder
+  - Source URL: https://www.colorado.edu/atlas/academics/grad
+  - Secondary relevant areas: core_hci
+  - Evidence snippet: MS in Creative Technology and Design with human-centered technology and social-impact design relevance
+  - Notes: Lightweight addition; creative technology/design pathway adds applied prototyping and social-impact variety.
+- **Program candidate `cand_prog_cu_boulder_ctd_ms`**: Master of Science in Creative Technology & Design
+  - Source URL: https://www.colorado.edu/atlas/academics/grad
+  - Secondary relevant areas: core_hci
+  - Evidence snippet: Creative technology and design MS with real-world design challenges, technical know-how, and social-impact track relevance
+  - Notes: Adds creative-technology/prototyping variety rather than a traditional HCI degree; later verify HCI/UX methods coverage.
 
 ## Review status: promoted
 
