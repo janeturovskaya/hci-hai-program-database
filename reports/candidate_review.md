@@ -446,6 +446,10 @@ This report summarizes only manually provided candidate intake data. It does not
   - Secondary relevant areas: core_hci;human_centered_ai
   - Evidence snippet: MS Computer Science allows focus on data mining and machine learning, NLP and intelligent systems, visualization and HCI, among other areas.
   - Evidence snippet: HCI strengths include dialog and recommender systems, information visualization and bias, AI/computing ethics, future of work, and Human AI Interaction.
+  - Evidence snippet: Program requirements say all MS students complete a practicum involving a substantial project or internship under an Emory faculty member or Computer Science/Informatics industry expert, providing real-life project experience.
+  - Evidence snippet: Emory HCI strengths include cognition and visualization, dialog and recommender systems, information visualization and bias, AI/computing ethics, future of work, sustainability and IoT, broadening participation in computing, and Human AI Interaction.
+  - Evidence snippet: Applied AI Practicum partners teams of 3-4 pre-selected CS MS students with organizations to develop AI/ML solutions, with faculty supervision, code/models/prototypes, GPU cluster support, and example projects such as chatbots, business intelligence analytics, and recommendation systems.
+  - Evidence snippet: Official graduate research page lists HCI mentoring in human-AI interaction, AI ethics, visualization, dialog and recommender systems, and representative technical courses such as machine learning, artificial intelligence, data mining, NLP, information retrieval, systems, and HCI-relevant research areas.
   - Notes: CS+HCI+AI research signal; later verify master’s research participation and fit outside PhD-oriented work.
 
 #### University: George Mason University
@@ -459,6 +463,10 @@ This report summarizes only manually provided candidate intake data. It does not
   - Secondary relevant areas: human_centered_ai;core_hci
   - Evidence snippet: Catalog lists Applied Artificial Intelligence Technologies coursework including Human-AI Interaction, Interactive Machine Learning and Artificial Intelligence, and Interaction Design and Accessibility.
   - Evidence snippet: AIT 618 is Human-AI Interaction and is recommended for students admitted to the MS-AIT degree program or by permission.
+  - Evidence snippet: Catalog lists the Applied Artificial Intelligence Technologies pathway with required Foundations of Applied AI, Foundations of Data Processing, Information Technology Ethics and Society, and AI Application Development, plus electives including Human-AI Interaction and Interactive Machine Learning and Artificial Intelligence; the HCI pathway includes HCI foundations and Human-AI Interaction as an elective.
+  - Evidence snippet: AIT 618 Human-AI Interaction covers designing, building, and evaluating AI-powered tools, with HAI principles and front-end/back-end technical skills; AIT 616 covers interactive ML/XAI toolkits and human-facing tools for human-AI collaboration.
+  - Evidence snippet: Applied Information Technology MS pathway electives include AIT 685 Capstone Seminar, AIT 699 Research Project, and AIT 799 Master's Thesis, making applied/research outputs possible within several pathways.
+  - Evidence snippet: Official college news says George Mason HCI students and faculty present research at CHI, showing active HCI research participation by students.
   - Notes: Course-level HAI signal; later verify pathway advising and whether HAI is a coherent MS route.
 
 ### Relevant area: human_centered_ai
@@ -489,6 +497,10 @@ This report summarizes only manually provided candidate intake data. It does not
   - Secondary relevant areas: human_ai_interaction;core_hci
   - Evidence snippet: Official news describes a Fall 2026 human-centered AI master’s blending AI/ML foundations with interdisciplinary expertise for useful, accessible, responsible systems.
   - Evidence snippet: Graduate program list includes Human-Centered AI, M.S. under Computer Science.
+  - Evidence snippet: Official launch story says the Fall 2026 Human-Centered AI MS blends technical foundations of AI and machine learning with expertise to make systems useful, accessible, and responsible; it integrates design and psychology to understand needs, perceptions, and behavior around AI systems.
+  - Evidence snippet: Official graduate degrees list includes Human-Centered AI, M.S. under Computer Science.
+  - Evidence snippet: Computer Science research page lists AI/ML, data science, software systems, and human-computer interaction; it says students work alongside faculty on real-world challenges in health, security, education, and emerging technologies.
+  - Evidence snippet: SIAI AIRS Fellowship gives rising undergraduate and master's students a summer immersed in AI research with faculty mentors across Stevens.
   - Notes: New Fall 2026 program; later verify catalog details, project structure, and lab access.
 
 #### University: Syracuse University
@@ -502,6 +514,10 @@ This report summarizes only manually provided candidate intake data. It does not
   - Secondary relevant areas: core_hci
   - Evidence snippet: The Applied Human Centered AI master’s empowers students to master AI technologies while staying true to ethical and human-centered principles.
   - Evidence snippet: Official news says the degree prepares students to leverage generative AI models ethically and with a human-centered approach.
+  - Evidence snippet: Catalog describes the 31-credit Applied Human Centered AI MS as preparation to use advanced machine-learning packages and APIs with a human-centered approach; required/elective structure should be read from the official catalog.
+  - Evidence snippet: Graduate IST course catalog includes Applied Human Centered AI Portfolio and courses such as Building Human Centered AI Applications, Responsible AI, Dynamics of Human-AI Interaction, Natural Language Processing, Deep Learning in Practice, Applied Machine Learning, and Quantitative Reasoning for Data Science.
+  - Evidence snippet: Program page says students master AI technologies while staying true to ethical and human-centered principles and conclude with an application portfolio showcasing practical expertise and knowledge.
+  - Evidence snippet: CAIRE Lab says current members include undergraduates, graduate students, and faculty with backgrounds including human-computer interaction and focuses on critical AI, algorithm studies, and justice informatics.
   - Notes: Direct HCAI degree identity; later verify depth of human-subject evaluation and research access.
 
 #### University: UNC Charlotte
@@ -651,6 +667,11 @@ This report summarizes only manually provided candidate intake data. It does not
   - Secondary relevant areas: computational_social_science;core_hci
   - Evidence snippet: MSIM combines advanced technical skills with understanding of organizational and social challenges to develop impactful information solutions.
   - Evidence snippet: Catalog outcomes include human-centered design and systems, data analytics, and addressing research questions or real-world problems with appropriate methods.
+  - Evidence snippet: MSIM students complete 40 graduate hours and three required courses: Data Statistical Models and Information, Sociotechnical Information Systems, and Information Modeling or Database Design and Prototyping; remaining hours are flexible for individual career goals.
+  - Evidence snippet: IS 506 teaches design, development, and evaluation of human-centered information systems, including user needs, interactive prototypes, unit testing, and user studies; IS 507 introduces statistical and probabilistic models, predictive models, unsupervised learning, and model quality.
+  - Evidence snippet: MSIM Human-Centered Systems Design and Development pathway lists sample job titles including UX Designer/Researcher, Usability Analyst, Product Manager/Designer and courses including Human-Centered Information Systems, Usability Engineering, and Advanced Topics in Human-Centered Design and Systems.
+  - Evidence snippet: MSIM FAQ says students are not eligible for tuition-waiver teaching, research, or other graduate assistantships, but are eligible for graduate hourly positions, internships, and iSchool practicums.
+  - Evidence snippet: Faculty profile lists research focus in social sensing and intelligence, human-centered AI, human-AI teaming, AI for social good, responsible AI, data quality, big data analytics, and cyber-physical-human systems.
   - Notes: Strong iSchool data/HCD route; later verify HAI-specific electives and lab access.
 
 #### University: University of Michigan
