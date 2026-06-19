@@ -141,6 +141,10 @@ This report summarizes only manually provided candidate intake data. It does not
 - **Program candidate `cand_prog_university_of_chicago_macss`**: MA in Computational Social Science
   - Source URL: https://macss.uchicago.edu/
   - Secondary relevant areas: mixed_methods_uxr
+  - Evidence snippet: Direct program evidence: UChicago says MACSS provides solid foundations in data science and programming while fostering student-tailored social-science research interests.
+  - Evidence snippet: Direct program evidence: UChicago says MACSS students complete the equivalent of 18 graduate seminars and write an MA thesis, including computational math/coding boot camp components and placement exams.
+  - Evidence snippet: Direct program evidence: UChicago describes a summer internship program and says MACSS students build large-data analysis, modeling, programming, qualitative, and quantitative social science research skills.
+  - Evidence snippet: Direct program evidence: UChicago says MACSS graduates commonly enter data and research roles, and reports that for the Class of 2024, with 87% known outcomes, 100% accepted employment or doctoral admission within nine months.
   - Notes: Computational social science adjacent candidate; review HCI/AI-product relevance later.
 
 ### Relevant area: core_hci
@@ -154,6 +158,10 @@ This report summarizes only manually provided candidate intake data. It does not
 - **Program candidate `cand_prog_depaul_university_ms_hci`**: MS Human Computer Interaction
   - Source URL: https://www.depaul.edu/academics/programs/ms-in-human-computer-interaction
   - Secondary relevant areas: mixed_methods_uxr
+  - Evidence snippet: Direct program evidence: DePaul says the MS HCI focuses on user research, design, implementation, and evaluation to create useful, easy-to-use, accessible technologies for diverse users.
+  - Evidence snippet: Direct program evidence: DePaul catalog requirements list 48 degree quarter hours plus possible introductory courses and include HCI course options such as user research methods, survey design and analysis, mobile design, practicum, research capstone, and independent study.
+  - Evidence snippet: Direct course evidence: DePaul describes User Research Methods as training students to conduct, analyze, and communicate user research using data collection, analysis, and reporting techniques.
+  - Evidence snippet: Direct program evidence: DePaul online MS HCI learning outcomes include planning and conducting ethical user research with human participants and the curriculum lists UX strategy/web analytics, survey design and analysis, practicum, research capstone, and independent study.
   - Notes: Dedicated HCI candidate and flexible-format example; lightweight intake only.
 
 #### University: Drexel University
@@ -195,6 +203,10 @@ This report summarizes only manually provided candidate intake data. It does not
 - **Program candidate `cand_prog_rochester_institute_of_technology_hci_ms`**: Human-Computer Interaction MS
   - Source URL: https://www.rit.edu/study/human-computer-interaction-ms
   - Secondary relevant areas: mixed_methods_uxr
+  - Evidence snippet: Direct program evidence: RIT says the HCI MS explores design methods, evaluation, and implementation of interactive computing systems for human use, building on psychology and human behavior.
+  - Evidence snippet: Direct program evidence: RIT says the master’s focuses on skills for user-experience researchers and computing professionals, including observing website/software interaction and designing new technologies for user goals.
+  - Evidence snippet: Direct program handbook evidence: RIT describes capstone proposal and capstone project sequencing for the MS HCI, with some students conducting project work after the proposal course.
+  - Evidence snippet: Indirect historical program context: RIT reported the master’s requires a capstone project in which research would be conducted in institute labs, including a Usability Testing Laboratory.
   - Notes: Dedicated HCI candidate; lightweight intake only.
 
 #### University: University of California, Berkeley
@@ -216,6 +228,8 @@ This report summarizes only manually provided candidate intake data. It does not
   - Evidence snippet: Berkeley says UX for AI examines how generative AI is reshaping product design and teaches students to evaluate AI tools, reason about UX for AI, and decide when tasks should remain human-led.
   - Evidence snippet: Berkeley MIMS recent job titles include product manager, data scientist, machine learning engineer, UX researcher, interaction designer, product designer, UX designer, AI researcher, and research scientist.
   - Evidence snippet: Berkeley’s HCI research-area page lists faculty and topics including human-computer interaction, information visualization, tangible user interfaces, social computing, and human-centered AI.
+  - Evidence snippet: Direct program evidence: Berkeley describes the MIMS curriculum as combining required core work, electives, and a final project, with foundations in technology, social science, organization, design, and law/policy.
+  - Evidence snippet: Direct program evidence: Berkeley MIMS students complete a final project that applies information-management skills to a substantial problem, commonly in teams and with public presentation or documentation.
   - Notes: Good schema test for program plus school-level research areas. Keep as needs_review; later verify curriculum, faculty, and AI/HCI fit.
 
 #### University: University of California, Irvine
@@ -227,6 +241,10 @@ This report summarizes only manually provided candidate intake data. It does not
 - **Program candidate `cand_prog_university_of_california_irvine_mhcid`**: Master of Human-Computer Interaction and Design
   - Source URL: https://mhcid.ics.uci.edu/
   - Secondary relevant areas: mixed_methods_uxr
+  - Evidence snippet: Direct program evidence: UCI says MHCID is a lock-step cohort program in which all students take the same classes at the same time, supporting a consistent curriculum experience.
+  - Evidence snippet: Direct program evidence: UCI learning outcomes include human behavior and cognition, user-facing software and prototypes, and qualitative and quantitative methods for user data gathering and evaluation.
+  - Evidence snippet: Direct program evidence: UCI says capstone projects occur over the final six months and bring together skills and knowledge developed throughout the program.
+  - Evidence snippet: Direct program evidence: UCI says MHCID teams work with interdisciplinary faculty and an industry client to innovate, improve, or modify a digital product or service.
   - Notes: Dedicated/professional HCI design candidate; lightweight intake only.
 
 #### University: University of Maryland
@@ -255,6 +273,10 @@ This report summarizes only manually provided candidate intake data. It does not
 - **Program candidate `cand_prog_northwestern_university_msai`**: Master of Science in Artificial Intelligence
   - Source URL: https://www.mccormick.northwestern.edu/artificial-intelligence/overview/
   - Secondary relevant areas: human_ai_interaction
+  - Evidence snippet: Direct program evidence: Northwestern says MSAI trains students to design and develop AI systems that partner with human users and integrate into workflows, business, and human interactions.
+  - Evidence snippet: Direct program evidence: Northwestern says the first fall quarter includes required core work in AI, machine learning, interactive AI systems, and human cognition.
+  - Evidence snippet: Direct course evidence: Northwestern describes HCI as an interdisciplinary field studying how people and computers interact from individual usability to broader social and cultural phenomena.
+  - Evidence snippet: Direct program context: Northwestern says graduates are prepared to identify opportunities and lead teams in designing and developing sophisticated AI technologies and products.
   - Notes: Human-AI adjacent candidate; review HCI/UX fit carefully later.
 
 ### Relevant area: mixed_methods_uxr
@@ -268,6 +290,10 @@ This report summarizes only manually provided candidate intake data. It does not
 - **Program candidate `cand_prog_arizona_state_university_online_ms_ux`**: Online Master of Science in User Experience
   - Source URL: https://asuonline.asu.edu/online-degree-programs/graduate/online-user-experience-masters/
   - Secondary relevant areas: other
+  - Evidence snippet: Direct program evidence: ASU says the online MS UX combines human systems engineering, graphic information technology, and technical writing/communication to build skills in research, design, and communication.
+  - Evidence snippet: Direct program evidence: ASU says the core curriculum covers systems engineering, technical communication, design, UX principles, research on user needs, criteria for successful products, usability testing, and evaluation methods, with two electives.
+  - Evidence snippet: Direct program evidence: ASU lists the MS UX as online with 10 total classes, 7.5 weeks per class, 30 total credit hours, and an August 20, 2026 next start date.
+  - Evidence snippet: Direct program evidence: ASU says graduates are prepared for roles in UX, design research, HCI, interface design, interaction design, digital visualization design, and usability testing.
   - Notes: Online/flexible UX candidate; lightweight intake only.
 
 #### University: Cornell University
@@ -288,6 +314,8 @@ This report summarizes only manually provided candidate intake data. It does not
   - Evidence snippet: Cornell describes HCI researchers as studying how humans interact with technology and drawing on psychology, design, and computer science to create effective digital experiences.
   - Evidence snippet: Cornell says Human-AI Interaction research studies how people interact with, understand, and collaborate with AI technologies.
   - Evidence snippet: Cornell lists Qian Yang research areas including Human Centered Natural Language Processing and Human-AI interaction, with a Ph.D. in human-computer interaction.
+  - Evidence snippet: Direct program evidence: Cornell frames the MPS as professional preparation for solving real-world problems and lists career-relevant focus areas including user experience, data science, interactive technologies, and networks/crowds/markets.
+  - Evidence snippet: Direct program evidence: Cornell says the MPS combines foundations with advanced technical skills and culminates in a real-world project, with 30-credit two-semester or 39-credit three-semester options.
   - Notes: Good test for non-dedicated-HCI but relevant InfoSci program. Keep as needs_review; later check Human-AI faculty and research access.
 
 #### University: The University of Texas at Austin
@@ -299,6 +327,10 @@ This report summarizes only manually provided candidate intake data. It does not
 - **Program candidate `cand_prog_university_of_texas_austin_msis`**: Master of Science in Information Studies
   - Source URL: https://ischool.utexas.edu/programs/msis
   - Secondary relevant areas: core_hci;human_centered_ai
+  - Evidence snippet: Direct program evidence: UT Austin lists MSIS areas of study including HCI, UX research and design, Human-Centered AI and Data Science, data engineering, information retrieval/search, and informatics.
+  - Evidence snippet: Direct course evidence: UT Austin Human-AI Interaction introduces combining human and machine intelligence, psychological and societal impacts of AI, and design guidelines and methods for human-centered AI.
+  - Evidence snippet: Direct course evidence: UT Austin describes a UX course covering user research, concept generation, design methods, user evaluation, teamwork, design rationale, and presentation.
+  - Evidence snippet: Direct course-list evidence: UT Austin MSIS/PhD offerings include prompt engineering, machine learning, data wrangling, accessible UX, user behavior/search experience, and Human-AI Interaction.
   - Notes: Information Science/HCI/HCAI-adjacent candidate; review pathway depth later.
 
 #### University: University of Michigan
